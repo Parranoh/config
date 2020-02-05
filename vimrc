@@ -12,6 +12,8 @@ Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'eagletmt/neco-ghc'
 
+Plugin 'gosukiwi/vim-atom-dark'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -27,8 +29,6 @@ set textwidth=80
 set background=dark
 set showmatch
 set foldmethod=marker
-let g:solarized_termtrans=1
-colorscheme solarized
 :highlight ExtraWhitespace ctermbg=green guibg=darkgreen
 :match ExtraWhitespace /\s\+$/
 set backupdir=.backup,~/.backup,/tmp//
