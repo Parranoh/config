@@ -201,17 +201,18 @@ include "%L"
 <Multi_key> <bar> <s> <s>                            : "╷"  U2577  # BOX DRAWINGS LIGHT DOWN
 #
 # Other
-<Multi_key> <l> <s>            : "ſ"    U017F    # LATIN SMALL LETTER LONG S
-<Multi_key> <l> <z>            : "ʒ"    U0292    # LATIN SMALL LETTER EZH
-<Multi_key> <l> <Z>            : "Ʒ"    U01B7    # LATIN CAPITAL LETTER EZH
-<Multi_key> <Q> <E> <D>        : "■"    U25A0    # BLACK SQUARE
-<Multi_key> <q> <e> <d>        : "□"    U25A1    # WHITE SQUARE
-<Multi_key> <minus> <A>        : "∀"    U2200    # FOR ALL
-<Multi_key> <bar> <E>          : "∃"    U2203    # THERE EXISTS
-<Multi_key> <slash> <E>        : "∄"    U2204    # THERE DOES NOT EXIST
-<Multi_key> <colon> <equal>    : "≔"    U2254    # COLON EQUALS
-<Multi_key> <exclam> <equal>   : "≢"    U2262    # NOT IDENTICAL TO
-<Multi_key> <bar> <underscore> : "⊥"    U22A5    # UP TACK
-<Multi_key> <o> <o>            : "∘"    U2218    # RING OPERATOR
-<Multi_key> <asterisk> <0>     : "°"    degree   # DEGREE SIGN
-<Multi_key> <0> <asterisk>     : "°"    degree   # DEGREE SIGN
+<Multi_key> <l> <s>                      : "ſ"    U017F    # LATIN SMALL LETTER LONG S
+<Multi_key> <l> <z>                      : "ʒ"    U0292    # LATIN SMALL LETTER EZH
+<Multi_key> <l> <Z>                      : "Ʒ"    U01B7    # LATIN CAPITAL LETTER EZH
+<Multi_key> <Q> <E> <D>                  : "■"    U25A0    # BLACK SQUARE
+<Multi_key> <q> <e> <d>                  : "□"    U25A1    # WHITE SQUARE
+<Multi_key> <minus> <A>                  : "∀"    U2200    # FOR ALL
+<Multi_key> <bar> <E>                    : "∃"    U2203    # THERE EXISTS
+<Multi_key> <slash> <E>                  : "∄"    U2204    # THERE DOES NOT EXIST
+<Multi_key> <colon> <equal>              : "≔"    U2254    # COLON EQUALS
+<Multi_key> <exclam> <equal>             : "≢"    U2262    # NOT IDENTICAL TO
+<Multi_key> <bar> <underscore>           : "⊥"    U22A5    # UP TACK
+<Multi_key> <o> <o>                      : "∘"    U2218    # RING OPERATOR
+<Multi_key> <asterisk> <0>               : "°"    degree   # DEGREE SIGN
+<Multi_key> <0> <asterisk>               : "°"    degree   # DEGREE SIGN
+<Multi_key> <less> <asterisk> <greater>  : "⊛"    U229B    # CIRCLED ASTERISK OPERATOR
