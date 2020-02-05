@@ -79,7 +79,7 @@ include "%L"
 # <Multi_key> <g> <p> <s>   : "ψ"    U03C8    # GREEK SMALL LETTER PSI
 # <Multi_key> <g> <v> <p> <s>   : "ᴪ"    U1D2A    # GREEK LETTER SMALL CAPITAL PSI
 #
-# Fraktur Lowercase
+# Fraktur Uppercase
 <Multi_key> <f> <A> : "𝔄"    U1D504   # MATHEMATICAL FRAKTUR CAPITAL A
 <Multi_key> <f> <B> : "𝔅"    U1D505   # MATHEMATICAL FRAKTUR CAPITAL B
 <Multi_key> <f> <C> : "ℭ"    U212D    # BLACK-LETTER CAPITAL C
@@ -107,7 +107,7 @@ include "%L"
 <Multi_key> <f> <Y> : "𝔜"    U1D51C   # MATHEMATICAL FRAKTUR CAPITAL Y
 <Multi_key> <f> <Z> : "ℨ"    U2128    # BLACK-LETTER CAPITAL Z
 #
-# Fraktur Uppercase
+# Fraktur Lowercase
 <Multi_key> <f> <a> : "𝔞"    U1D51E   # MATHEMATICAL FRAKTUR SMALL A
 <Multi_key> <f> <b> : "𝔟"    U1D51F   # MATHEMATICAL FRAKTUR SMALL B
 <Multi_key> <f> <c> : "𝔠"    U1D520   # MATHEMATICAL FRAKTUR SMALL C
