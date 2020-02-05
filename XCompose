@@ -1,0 +1,217 @@
+include "%L"
+#
+# Greek alphabet
+#
+# Greek key bindings use corresponding Latin characters as much as possible and plausible.
+# Latin characters not present in Greek are used for Greek characters not present in Latin:
+# "C" invokes Sigma Luna [U+03A2] (so far not assigned in Unicode)
+# "H" invokes Eta; "J" invokes Khi (Chi)
+# "Q" invokes Theta; "U" invokes Upsilon; "V" invokes Psi; "W" invokes Omega
+#
+# Greek Core Alphabet Uppercase
+<Multi_key> <g> <A> : "Α"    U0391    # GREEK CAPITAL LETTER ALPHA
+<Multi_key> <g> <B> : "Β"    U0392    # GREEK CAPITAL LETTER BETA
+<Multi_key> <g> <G> : "Γ"    U0393    # GREEK CAPITAL LETTER GAMMA
+<Multi_key> <g> <D> : "Δ"    U0394    # GREEK CAPITAL LETTER DELTA
+<Multi_key> <g> <E> : "Ε"    U0395    # GREEK CAPITAL LETTER EPSILON
+<Multi_key> <g> <Z> : "Ζ"    U0396    # GREEK CAPITAL LETTER ZETA
+<Multi_key> <g> <H> : "Η"    U0397    # GREEK CAPITAL LETTER ETA
+<Multi_key> <g> <Q> : "Θ"    U0398    # GREEK CAPITAL LETTER THETA
+<Multi_key> <g> <I> : "Ι"    U0399    # GREEK CAPITAL LETTER IOTA
+<Multi_key> <g> <K> : "Κ"    U039A    # GREEK CAPITAL LETTER KAPPA
+<Multi_key> <g> <L> : "Λ"    U039B    # GREEK CAPITAL LETTER LAMBDA
+<Multi_key> <g> <M> : "Μ"    U039C    # GREEK CAPITAL LETTER MU
+<Multi_key> <g> <N> : "Ν"    U039D    # GREEK CAPITAL LETTER NU
+<Multi_key> <g> <X> : "Ξ"    U039E    # GREEK CAPITAL LETTER XI
+<Multi_key> <g> <O> : "Ο"    U039F    # GREEK CAPITAL LETTER OMIKRON
+<Multi_key> <g> <P> : "Π"    U03A0    # GREEK CAPITAL LETTER PI
+<Multi_key> <g> <R> : "Ρ"    U03A1    # GREEK CAPITAL LETTER RHO
+<Multi_key> <g> <C> : "΢"    U03A2    # GREEK CAPITAL LETTER SIGMA LUNA
+<Multi_key> <g> <S> : "Σ"    U03A3    # GREEK CAPITAL LETTER SIGMA
+<Multi_key> <g> <T> : "Τ"    U03A4    # GREEK CAPITAL LETTER TAU
+<Multi_key> <g> <U> : "Υ"    U03A5    # GREEK CAPITAL LETTER UPSILON
+<Multi_key> <g> <F> : "Φ"    U03A6    # GREEK CAPITAL LETTER PHI
+<Multi_key> <g> <J> : "Χ"    U03A7    # GREEK CAPITAL LETTER KHI
+<Multi_key> <g> <V> : "Ψ"    U03A8    # GREEK CAPITAL LETTER PSI
+<Multi_key> <g> <W> : "Ω"    U03A9    # GREEK CAPITAL LETTER OMEGA
+#
+# Greek Core Alphabet Lowercase
+<Multi_key> <g> <a> : "α"    U03B1    # GREEK SMALL LETTER ALPHA
+<Multi_key> <g> <b> : "β"    U03B2    # GREEK SMALL LETTER BETA
+<Multi_key> <g> <g> : "γ"    U03B3    # GREEK SMALL LETTER GAMMA
+<Multi_key> <g> <d> : "δ"    U03B4    # GREEK SMALL LETTER DELTA
+<Multi_key> <g> <e> : "ε"    U03B5    # GREEK SMALL LETTER EPSILON
+<Multi_key> <g> <z> : "ζ"    U03B6    # GREEK SMALL LETTER ZETA
+<Multi_key> <g> <h> : "η"    U03B7    # GREEK SMALL LETTER ETA
+<Multi_key> <g> <q> : "θ"    U03B8    # GREEK SMALL LETTER THETA
+<Multi_key> <g> <i> : "ι"    U03B9    # GREEK SMALL LETTER IOTA
+<Multi_key> <g> <k> : "κ"    U03BA    # GREEK SMALL LETTER KAPPA
+<Multi_key> <g> <l> : "λ"    U03BB    # GREEK SMALL LETTER LAMBDA
+<Multi_key> <g> <m> : "μ"    U03BC    # GREEK SMALL LETTER MU
+<Multi_key> <g> <n> : "ν"    U03BD    # GREEK SMALL LETTER NU
+<Multi_key> <g> <x> : "ξ"    U03BE    # GREEK SMALL LETTER XI
+<Multi_key> <g> <o> : "ο"    U03BF    # GREEK SMALL LETTER OMIKRON
+<Multi_key> <g> <p> : "π"    U03C0    # GREEK SMALL LETTER PI
+<Multi_key> <g> <r> : "ρ"    U03C1    # GREEK SMALL LETTER RHO
+<Multi_key> <g> <c> : "ς"    U03C2    # GREEK SMALL LETTER FINAL SIGMA
+<Multi_key> <g> <s> : "σ"    U03C3    # GREEK SMALL LETTER SIGMA
+<Multi_key> <g> <t> : "τ"    U03C4    # GREEK SMALL LETTER TAU
+<Multi_key> <g> <u> : "υ"    U03C5    # GREEK SMALL LETTER UPSILON
+<Multi_key> <g> <f> : "φ"    U03C6    # GREEK SMALL LETTER PHI
+<Multi_key> <g> <j> : "χ"    U03C7    # GREEK SMALL LETTER KHI
+<Multi_key> <g> <v> : "ψ"    U03C8    # GREEK SMALL LETTER PSI
+<Multi_key> <g> <w> : "ω"    U03C9    # GREEK SMALL LETTER OMEGA
+#
+# Variants
+# <Multi_key> <g> <v> <H>   : "Ͱ"    U0370    # GREEK CAPITAL LETTER HETA
+# <Multi_key> <g> <v> <h>   : "ͱ"    U0371    # GREEK SMALL LETTER HETA
+# <Multi_key> <g> <v> <b>   : "ϐ"    U03D0    # GREEK BETA SYMBOL
+# <Multi_key> <g> <v> <e>   : "ϵ"    U03F5    # GREEK LUNATE EPSILON SYMBOL
+# <Multi_key> <g> <v> <Q>   : "ϴ"    U03F4    # GREEK CAPITAL THETA SYMBOL
+# <Multi_key> <g> <v> <q>   : "ϑ"    U03D1    # GREEK THETA SYMBOL
+# <Multi_key> <g> <v> <k>   : "ϰ"    U03F0    # GREEK KAPPA SYMBOL
+# <Multi_key> <g> <v> <p>   : "ϖ"    U03D6    # GREEK PI SYMBOL
+# <Multi_key> <g> <v> <U>   : "ϒ"    U03D2    # GREEK UPSILON WITH HOOK SYMBOL
+# <Multi_key> <g> <v> <Y>   : "ϒ"    U03D2    # GREEK UPSILON WITH HOOK SYMBOL
+# <Multi_key> <g> <v> <v>   : "ϕ"    U03D5    # GREEK PHI SYMBOL
+# <Multi_key> <g> <v> <x>   : "☧"    U2627    # CHI RHO
+# Odd freaks
+# <Multi_key> <g> <p> <s>   : "ψ"    U03C8    # GREEK SMALL LETTER PSI
+# <Multi_key> <g> <v> <p> <s>   : "ᴪ"    U1D2A    # GREEK LETTER SMALL CAPITAL PSI
+#
+# Fraktur Lowercase
+<Multi_key> <f> <A> : "𝔄"    U1D504   # MATHEMATICAL FRAKTUR CAPITAL A
+<Multi_key> <f> <B> : "𝔅"    U1D505   # MATHEMATICAL FRAKTUR CAPITAL B
+<Multi_key> <f> <C> : "ℭ"    U212D    # BLACK-LETTER CAPITAL C
+<Multi_key> <f> <D> : "𝔇"    U1D507   # MATHEMATICAL FRAKTUR CAPITAL D
+<Multi_key> <f> <E> : "𝔈"    U1D508   # MATHEMATICAL FRAKTUR CAPITAL E
+<Multi_key> <f> <F> : "𝔉"    U1D509   # MATHEMATICAL FRAKTUR CAPITAL F
+<Multi_key> <f> <G> : "𝔊"    U1D50A   # MATHEMATICAL FRAKTUR CAPITAL G
+<Multi_key> <f> <H> : "ℌ"    U210C    # BLACK-LETTER CAPITAL H
+<Multi_key> <f> <I> : "ℑ"    U2111    # BLACK-LETTER CAPITAL I
+<Multi_key> <f> <J> : "𝔍"    U1D50D   # MATHEMATICAL FRAKTUR CAPITAL J
+<Multi_key> <f> <K> : "𝔎"    U1D50E   # MATHEMATICAL FRAKTUR CAPITAL K
+<Multi_key> <f> <L> : "𝔏"    U1D50F   # MATHEMATICAL FRAKTUR CAPITAL L
+<Multi_key> <f> <M> : "𝔐"    U1D510   # MATHEMATICAL FRAKTUR CAPITAL M
+<Multi_key> <f> <N> : "𝔑"    U1D511   # MATHEMATICAL FRAKTUR CAPITAL N
+<Multi_key> <f> <O> : "𝔒"    U1D512   # MATHEMATICAL FRAKTUR CAPITAL O
+<Multi_key> <f> <P> : "𝔓"    U1D513   # MATHEMATICAL FRAKTUR CAPITAL P
+<Multi_key> <f> <Q> : "𝔔"    U1D514   # MATHEMATICAL FRAKTUR CAPITAL Q
+<Multi_key> <f> <R> : "ℜ"    U211C    # BLACK-LETTER CAPITAL R
+<Multi_key> <f> <S> : "𝔖"    U1D516   # MATHEMATICAL FRAKTUR CAPITAL S
+<Multi_key> <f> <T> : "𝔗"    U1D517   # MATHEMATICAL FRAKTUR CAPITAL T
+<Multi_key> <f> <U> : "𝔘"    U1D518   # MATHEMATICAL FRAKTUR CAPITAL U
+<Multi_key> <f> <V> : "𝔙"    U1D519   # MATHEMATICAL FRAKTUR CAPITAL V
+<Multi_key> <f> <W> : "𝔚"    U1D51A   # MATHEMATICAL FRAKTUR CAPITAL W
+<Multi_key> <f> <X> : "𝔛"    U1D51B   # MATHEMATICAL FRAKTUR CAPITAL X
+<Multi_key> <f> <Y> : "𝔜"    U1D51C   # MATHEMATICAL FRAKTUR CAPITAL Y
+<Multi_key> <f> <Z> : "ℨ"    U2128    # BLACK-LETTER CAPITAL Z
+#
+# Fraktur Uppercase
+<Multi_key> <f> <a> : "𝔞"    U1D51E   # MATHEMATICAL FRAKTUR SMALL A
+<Multi_key> <f> <b> : "𝔟"    U1D51F   # MATHEMATICAL FRAKTUR SMALL B
+<Multi_key> <f> <c> : "𝔠"    U1D520   # MATHEMATICAL FRAKTUR SMALL C
+<Multi_key> <f> <d> : "𝔡"    U1D521   # MATHEMATICAL FRAKTUR SMALL D
+<Multi_key> <f> <e> : "𝔢"    U1D522   # MATHEMATICAL FRAKTUR SMALL E
+<Multi_key> <f> <f> : "𝔣"    U1D523   # MATHEMATICAL FRAKTUR SMALL F
+<Multi_key> <f> <g> : "𝔤"    U1D524   # MATHEMATICAL FRAKTUR SMALL G
+<Multi_key> <f> <h> : "𝔥"    U1D525   # MATHEMATICAL FRAKTUR SMALL H
+<Multi_key> <f> <i> : "𝔦"    U1D526   # MATHEMATICAL FRAKTUR SMALL I
+<Multi_key> <f> <j> : "𝔧"    U1D527   # MATHEMATICAL FRAKTUR SMALL J
+<Multi_key> <f> <k> : "𝔨"    U1D528   # MATHEMATICAL FRAKTUR SMALL K
+<Multi_key> <f> <l> : "𝔩"    U1D529   # MATHEMATICAL FRAKTUR SMALL L
+<Multi_key> <f> <m> : "𝔪"    U1D52A   # MATHEMATICAL FRAKTUR SMALL M
+<Multi_key> <f> <n> : "𝔫"    U1D52B   # MATHEMATICAL FRAKTUR SMALL N
+<Multi_key> <f> <o> : "𝔬"    U1D52C   # MATHEMATICAL FRAKTUR SMALL O
+<Multi_key> <f> <p> : "𝔭"    U1D52D   # MATHEMATICAL FRAKTUR SMALL P
+<Multi_key> <f> <q> : "𝔮"    U1D52E   # MATHEMATICAL FRAKTUR SMALL Q
+<Multi_key> <f> <r> : "𝔯"    U1D52F   # MATHEMATICAL FRAKTUR SMALL R
+<Multi_key> <f> <s> : "𝔰"    U1D530   # MATHEMATICAL FRAKTUR SMALL S
+<Multi_key> <f> <t> : "𝔱"    U1D531   # MATHEMATICAL FRAKTUR SMALL T
+<Multi_key> <f> <u> : "𝔲"    U1D532   # MATHEMATICAL FRAKTUR SMALL U
+<Multi_key> <f> <v> : "𝔳"    U1D533   # MATHEMATICAL FRAKTUR SMALL V
+<Multi_key> <f> <w> : "𝔴"    U1D534   # MATHEMATICAL FRAKTUR SMALL W
+<Multi_key> <f> <x> : "𝔵"    U1D535   # MATHEMATICAL FRAKTUR SMALL X
+<Multi_key> <f> <y> : "𝔶"    U1D536   # MATHEMATICAL FRAKTUR SMALL Y
+<Multi_key> <f> <z> : "𝔷"    U1D537   # MATHEMATICAL FRAKTUR SMALL Z
+#
+# Box Drawings
+<Multi_key> <bar> <minus> <minus>                    : "─"  U2500  # BOX DRAWINGS LIGHT HORIZONTAL
+<Multi_key> <bar> <Left> <Right>                     : "─"  U2500  # BOX DRAWINGS LIGHT HORIZONTAL
+<Multi_key> <bar> <Right> <Left>                     : "─"  U2500  # BOX DRAWINGS LIGHT HORIZONTAL
+<Multi_key> <bar> <a> <d>                            : "─"  U2500  # BOX DRAWINGS LIGHT HORIZONTAL
+<Multi_key> <bar> <d> <a>                            : "─"  U2500  # BOX DRAWINGS LIGHT HORIZONTAL
+<Multi_key> <bar> <bar> <bar>                        : "│"  U2502  # BOX DRAWINGS LIGHT VERTICAL
+<Multi_key> <bar> <Up> <Down>                        : "│"  U2502  # BOX DRAWINGS LIGHT VERTICAL
+<Multi_key> <bar> <Down> <Up>                        : "│"  U2502  # BOX DRAWINGS LIGHT VERTICAL
+<Multi_key> <bar> <w> <s>                            : "│"  U2502  # BOX DRAWINGS LIGHT VERTICAL
+<Multi_key> <bar> <s> <w>                            : "│"  U2502  # BOX DRAWINGS LIGHT VERTICAL
+<Multi_key> <bar> <period> <period> <minus>          : "┄"  U2504  # BOX DRAWINGS LIGHT TRIPLE DASH HORIZONTAL
+<Multi_key> <bar> <period> <period> <bar>            : "┆"  U2506  # BOX DRAWINGS LIGHT TRIPLE DASH VERTICAL
+<Multi_key> <bar> <period> <period> <period> <minus> : "┈"  U2508  # BOX DRAWINGS LIGHT QUADRUPLE DASH HORIZONTAL
+<Multi_key> <bar> <period> <period> <period> <bar>   : "┊"  U250A  # BOX DRAWINGS LIGHT QUADRUPLE DASH VERTICAL
+<Multi_key> <bar> <Down> <Right>                     : "┌"  U250C  # BOX DRAWINGS LIGHT DOWN AND RIGHT
+<Multi_key> <bar> <Right> <Down>                     : "┌"  U250C  # BOX DRAWINGS LIGHT DOWN AND RIGHT
+<Multi_key> <bar> <s> <d>                            : "┌"  U250C  # BOX DRAWINGS LIGHT DOWN AND RIGHT
+<Multi_key> <bar> <d> <s>                            : "┌"  U250C  # BOX DRAWINGS LIGHT DOWN AND RIGHT
+<Multi_key> <bar> <Down> <Left>                      : "┐"  U2510  # BOX DRAWINGS LIGHT DOWN AND LEFT
+<Multi_key> <bar> <Left> <Down>                      : "┐"  U2510  # BOX DRAWINGS LIGHT DOWN AND LEFT
+<Multi_key> <bar> <s> <a>                            : "┐"  U2510  # BOX DRAWINGS LIGHT DOWN AND LEFT
+<Multi_key> <bar> <a> <s>                            : "┐"  U2510  # BOX DRAWINGS LIGHT DOWN AND LEFT
+<Multi_key> <bar> <Up> <Right>                       : "└"  U2514  # BOX DRAWINGS LIGHT UP AND RIGHT
+<Multi_key> <bar> <Right> <Up>                       : "└"  U2514  # BOX DRAWINGS LIGHT UP AND RIGHT
+<Multi_key> <bar> <w> <d>                            : "└"  U2514  # BOX DRAWINGS LIGHT UP AND RIGHT
+<Multi_key> <bar> <d> <w>                            : "└"  U2514  # BOX DRAWINGS LIGHT UP AND RIGHT
+<Multi_key> <bar> <Up> <Left>                        : "┘"  U2518  # BOX DRAWINGS LIGHT UP AND LEFT
+<Multi_key> <bar> <Left> <Up>                        : "┘"  U2518  # BOX DRAWINGS LIGHT UP AND LEFT
+<Multi_key> <bar> <w> <a>                            : "┘"  U2518  # BOX DRAWINGS LIGHT UP AND LEFT
+<Multi_key> <bar> <a> <w>                            : "┘"  U2518  # BOX DRAWINGS LIGHT UP AND LEFT
+<Multi_key> <bar> <bar> <Right>                      : "├"  U251C  # BOX DRAWINGS LIGHT VERTICAL AND RIGHT
+<Multi_key> <bar> <Right> <bar>                      : "├"  U251C  # BOX DRAWINGS LIGHT VERTICAL AND RIGHT
+<Multi_key> <bar> <bar> <d>                          : "├"  U251C  # BOX DRAWINGS LIGHT VERTICAL AND RIGHT
+<Multi_key> <bar> <d> <bar>                          : "├"  U251C  # BOX DRAWINGS LIGHT VERTICAL AND RIGHT
+<Multi_key> <bar> <bar> <Left>                       : "┤"  U2524  # BOX DRAWINGS LIGHT VERTICAL AND LEFT
+<Multi_key> <bar> <Left> <bar>                       : "┤"  U2524  # BOX DRAWINGS LIGHT VERTICAL AND LEFT
+<Multi_key> <bar> <bar> <a>                          : "┤"  U2524  # BOX DRAWINGS LIGHT VERTICAL AND LEFT
+<Multi_key> <bar> <a> <bar>                          : "┤"  U2524  # BOX DRAWINGS LIGHT VERTICAL AND LEFT
+<Multi_key> <bar> <Down> <minus>                     : "┬"  U252C  # BOX DRAWINGS LIGHT DOWN AND HORIZONTAL
+<Multi_key> <bar> <minus> <Down>                     : "┬"  U252C  # BOX DRAWINGS LIGHT DOWN AND HORIZONTAL
+<Multi_key> <bar> <s> <minus>                        : "┬"  U252C  # BOX DRAWINGS LIGHT DOWN AND HORIZONTAL
+<Multi_key> <bar> <minus> <s>                        : "┬"  U252C  # BOX DRAWINGS LIGHT DOWN AND HORIZONTAL
+<Multi_key> <bar> <Up> <minus>                       : "┴"  U2534  # BOX DRAWINGS LIGHT UP AND HORIZONTAL
+<Multi_key> <bar> <minus> <Up>                       : "┴"  U2534  # BOX DRAWINGS LIGHT UP AND HORIZONTAL
+<Multi_key> <bar> <w> <minus>                        : "┴"  U2534  # BOX DRAWINGS LIGHT UP AND HORIZONTAL
+<Multi_key> <bar> <minus> <w>                        : "┴"  U2534  # BOX DRAWINGS LIGHT UP AND HORIZONTAL
+<Multi_key> <bar> <bar> <minus>                      : "┼"  U253C  # BOX DRAWINGS LIGHT VERTICAL AND HORIZONTAL
+<Multi_key> <bar> <minus> <bar>                      : "┼"  U253C  # BOX DRAWINGS LIGHT VERTICAL AND HORIZONTAL
+<Multi_key> <bar> <plus> <plus>                      : "┼"  U253C  # BOX DRAWINGS LIGHT VERTICAL AND HORIZONTAL
+<Multi_key> <bar> <period> <minus>                   : "╌"  U254C  # BOX DRAWINGS LIGHT DOUBLE DASH HORIZONTAL
+<Multi_key> <bar> <period> <bar>                     : "╎"  U254E  # BOX DRAWINGS LIGHT DOUBLE DASH VERTICAL
+<Multi_key> <bar> <slash> <slash>                    : "╱"  U2571  # BOX DRAWINGS LIGHT DIAGONAL UPPER RIGHT TO LOWER LEFT
+<Multi_key> <bar> <backslash> <backslash>            : "╲"  U2572  # BOX DRAWINGS LIGHT DIAGONAL UPPER LEFT TO LOWER RIGHT
+<Multi_key> <bar> <slash> <backslash>                : "╳"  U2573  # BOX DRAWINGS LIGHT DIAGONAL CROSS
+<Multi_key> <bar> <backslash> <slash>                : "╳"  U2573  # BOX DRAWINGS LIGHT DIAGONAL CROSS
+<Multi_key> <bar> <Left> <Left>                      : "╴"  U2574  # BOX DRAWINGS LIGHT LEFT
+<Multi_key> <bar> <a> <a>                            : "╴"  U2574  # BOX DRAWINGS LIGHT LEFT
+<Multi_key> <bar> <Up> <Up>                          : "╵"  U2575  # BOX DRAWINGS LIGHT UP
+<Multi_key> <bar> <w> <w>                            : "╵"  U2575  # BOX DRAWINGS LIGHT UP
+<Multi_key> <bar> <Right> <Right>                    : "╶"  U2576  # BOX DRAWINGS LIGHT RIGHT
+<Multi_key> <bar> <d> <d>                            : "╶"  U2576  # BOX DRAWINGS LIGHT RIGHT
+<Multi_key> <bar> <Down> <Down>                      : "╷"  U2577  # BOX DRAWINGS LIGHT DOWN
+<Multi_key> <bar> <s> <s>                            : "╷"  U2577  # BOX DRAWINGS LIGHT DOWN
+#
+# Other
+<Multi_key> <l> <s>            : "ſ"    U017F    # LATIN SMALL LETTER LONG S
+<Multi_key> <l> <z>            : "ʒ"    U0292    # LATIN SMALL LETTER EZH
+<Multi_key> <l> <Z>            : "Ʒ"    U01B7    # LATIN CAPITAL LETTER EZH
+<Multi_key> <Q> <E> <D>        : "■"    U25A0    # BLACK SQUARE
+<Multi_key> <q> <e> <d>        : "□"    U25A1    # WHITE SQUARE
+<Multi_key> <minus> <A>        : "∀"    U2200    # FOR ALL
+<Multi_key> <bar> <E>          : "∃"    U2203    # THERE EXISTS
+<Multi_key> <slash> <E>        : "∄"    U2204    # THERE DOES NOT EXIST
+<Multi_key> <colon> <equal>    : "≔"    U2254    # COLON EQUALS
+<Multi_key> <exclam> <equal>   : "≢"    U2262    # NOT IDENTICAL TO
+<Multi_key> <bar> <underscore> : "⊥"    U22A5    # UP TACK
+<Multi_key> <o> <o>            : "∘"    U2218    # RING OPERATOR
+<Multi_key> <asterisk> <0>     : "°"    degree   # DEGREE SIGN
+<Multi_key> <0> <asterisk>     : "°"    degree   # DEGREE SIGN
