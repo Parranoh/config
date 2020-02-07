@@ -13,6 +13,7 @@ alias ed="ed -p '* '"
 alias emacs='emacs -nw'
 alias cgrep='cat /usr/share/X11/locale/en_US.UTF-8/Compose ~/.XCompose | grep -i'
 alias path='echo $PATH | sed "s/:/\n/g" | sort'
+alias t='todo.sh'
 
 alias tmux-ls='tmux list-sessions'
 alias tmux-r='tmux attach-session'
