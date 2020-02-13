@@ -216,3 +216,52 @@ include "%L"
 <Multi_key> <asterisk> <0>               : "°"    degree   # DEGREE SIGN
 <Multi_key> <0> <asterisk>               : "°"    degree   # DEGREE SIGN
 <Multi_key> <less> <asterisk> <greater>  : "⊛"    U229B    # CIRCLED ASTERISK OPERATOR
+#
+# Emoji
+<Multi_key> <Return> <asciicircum>             :  "☝"    U261D    # WHITE UP POINTING INDEX
+<Multi_key> <Return> <V>                       :  "✌"    U270C    # VICTORY HAND
+<Multi_key> <Return> <less> <3>                :  "❤"    U2764    # RED HEART
+<Multi_key> <Return> <period> <bar> <period>   :  "🍆"   U1F346   # AUBERGINE
+<Multi_key> <Return> <a> <s> <s>               :  "🍑"   U1F351   # PEACH
+<Multi_key> <Return> <r> <u> <n>               :  "🏃"   U1F3C3   # RUNNER
+<Multi_key> <Return> <f> <l> <x>               :  "💪"   U1F4AA   # FLEXED BICEPS
+<Multi_key> <Return> <O> <O>                   :  "👀"   U1F440   # EYES
+<Multi_key> <Return> <h> <e> <y>               :  "👋"   U1F44B   # WAVING HAND SIGN
+<Multi_key> <Return> <o> <k>                   :  "👌"   U1F44C   # OK HAND SIGN
+<Multi_key> <Return> <Up>                      :  "👍"   U1F44D   # THUMBS UP SIGN
+<Multi_key> <Return> <Down>                    :  "👎"   U1F44E   # THUMBS DOWN SIGN
+<Multi_key> <Return> <s> <t> <p>               :  "👣"   U1F463   # FOOTPRINTS
+<Multi_key> <Return> <g> <s> <t>               :  "👻"   U1F47B   # GHOST
+<Multi_key> <Return> <z> <z> <z>               :  "💤"   U1F4A4   # SLEEPING SYMBOL
+<Multi_key> <Return> <c> <u> <m>               :  "💦"   U1F4A6   # SPLASHING SWEAT SYMBOL
+<Multi_key> <Return> <p> <o> <p>               :  "💩"   U1F4A9   # PILE OF POO
+<Multi_key> <Return> <1> <0> <0>               :  "💯"   U1F4AF   # HUNDRED POINTS SYMBOL
+<Multi_key> <Return> <l> <l> <a> <p>           :  "🖖"   U1F596   # VULCAN SALUTE
+<Multi_key> <Return> <colon> <parenright>      :  "😀"   U1F600   # GRINNING FACE
+<Multi_key> <Return> <semicolon> <D>           :  "😂"   U1F602   # FACE WITH TEARS OF JOY
+<Multi_key> <Return> <semicolon> <parenright>  :  "😉"   U1F609   # WINKING FACE
+<Multi_key> <Return> <B> <parenright>          :  "😎"   U1F60E   # SMILING FACE WITH SUNGLASSES
+<Multi_key> <Return> <j> <a> <z> <z>           :  "😏"   U1F60F   # SMIRKING FACE
+<Multi_key> <Return> <colon> <bar>             :  "😐"   U1F610   # NEUTRAL FACE
+<Multi_key> <Return> <colon> <asterisk>        :  "😗"   U1F617   # KISSING FACE
+<Multi_key> <Return> <semicolon> <asterisk>    :  "😘"   U1F618   # FACE BLOWING A KISS
+<Multi_key> <Return> <colon> <p>               :  "😛"   U1F61B   # FACE WITH TONGUE
+<Multi_key> <Return> <colon> <P>               :  "😛"   U1F61B   # FACE WITH TONGUE
+<Multi_key> <Return> <semicolon> <p>           :  "😜"   U1F61C   # WINKING FACE WITH TONGUE
+<Multi_key> <Return> <semicolon> <P>           :  "😜"   U1F61C   # WINKING FACE WITH TONGUE
+<Multi_key> <Return> <semicolon> <parenleft>   :  "😢"   U1F622   # CRYING FACE
+<Multi_key> <Return> <p> <f> <t>               :  "😤"   U1F624   # FACE WITH STEAM FROM NOSE
+<Multi_key> <Return> <a> <h> <h>               :  "😩"   U1F629   # WEARY FACE
+<Multi_key> <Return> <D> <semicolon>           :  "😭"   U1F62D   # LOUDLY CRYING FACE
+<Multi_key> <Return> <colon> <o>               :  "😮"   U1F62E   # FACE WITH OPEN MOUTH
+<Multi_key> <Return> <colon> <O>               :  "😱"   U1F631   # FACE SCREAMING IN FEAR
+<Multi_key> <Return> <colon> <space>           :  "😶"   U1F636   # FACE WITHOUT MOUTH
+<Multi_key> <Return> <parenright> <colon>      :  "🙃"   U1F643   # UPSIDE-DOWN FACE
+<Multi_key> <Return> <h> <m> <m>               :  "🤔"   U1F914   # THINKING FACE
+<Multi_key> <Return> <b> <o> <t>               :  "🤖"   U1F916   # ROBOT
+<Multi_key> <Return> <h> <u> <g>               :  "🤗"   U1F917   # HUGGING FACE
+<Multi_key> <Return> <6> <6> <6>               :  "🤘"   U1F91B   # SIGN OF THE HORNS
+<Multi_key> <Return> <y> <e> <e>               :  "🤠"   U1F920   # COWBOY HAT FACE
+<Multi_key> <Return> <Y> <E> <E>               :  "🤠"   U1F920   # COWBOY HAT FACE
+<Multi_key> <Return> <c> <l> <n>               :  "🤡"   U1F921   # CLOWN FACE
+<Multi_key> <Return> <r> <o> <f> <l>           :  "🤣"   U1F923   # ROLLING ON THE FLOOR LAUGHING
