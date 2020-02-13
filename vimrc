@@ -28,6 +28,7 @@ set expandtab
 set textwidth=80
 set background=dark
 set showmatch
+set hlsearch
 set foldmethod=marker
 :highlight ExtraWhitespace ctermbg=green guibg=darkgreen
 :match ExtraWhitespace /\s\+$/
