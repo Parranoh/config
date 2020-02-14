@@ -236,7 +236,7 @@ include "%L"
 <Multi_key> <Return> <c> <u> <m>               :  "💦"   U1F4A6   # SPLASHING SWEAT SYMBOL
 <Multi_key> <Return> <p> <o> <p>               :  "💩"   U1F4A9   # PILE OF POO
 <Multi_key> <Return> <1> <0> <0>               :  "💯"   U1F4AF   # HUNDRED POINTS SYMBOL
-<Multi_key> <Return> <l> <l> <a> <p>           :  "🖖"   U1F596   # VULCAN SALUTE
+<Multi_key> <Return> <l> <l> <a> <p>           :  "🖖"   U1F596   # RAISED HAND WITH PART BETWEEN MIDDLE AND RING FINGERS
 <Multi_key> <Return> <colon> <parenright>      :  "😀"   U1F600   # GRINNING FACE
 <Multi_key> <Return> <semicolon> <D>           :  "😂"   U1F602   # FACE WITH TEARS OF JOY
 <Multi_key> <Return> <semicolon> <parenright>  :  "😉"   U1F609   # WINKING FACE
@@ -244,13 +244,13 @@ include "%L"
 <Multi_key> <Return> <j> <a> <z> <z>           :  "😏"   U1F60F   # SMIRKING FACE
 <Multi_key> <Return> <colon> <bar>             :  "😐"   U1F610   # NEUTRAL FACE
 <Multi_key> <Return> <colon> <asterisk>        :  "😗"   U1F617   # KISSING FACE
-<Multi_key> <Return> <semicolon> <asterisk>    :  "😘"   U1F618   # FACE BLOWING A KISS
-<Multi_key> <Return> <colon> <p>               :  "😛"   U1F61B   # FACE WITH TONGUE
-<Multi_key> <Return> <colon> <P>               :  "😛"   U1F61B   # FACE WITH TONGUE
-<Multi_key> <Return> <semicolon> <p>           :  "😜"   U1F61C   # WINKING FACE WITH TONGUE
-<Multi_key> <Return> <semicolon> <P>           :  "😜"   U1F61C   # WINKING FACE WITH TONGUE
+<Multi_key> <Return> <semicolon> <asterisk>    :  "😘"   U1F618   # FACE THROWING A KISS
+<Multi_key> <Return> <colon> <p>               :  "😛"   U1F61B   # FACE WITH STUCK-OUT TONGUE
+<Multi_key> <Return> <colon> <P>               :  "😛"   U1F61B   # FACE WITH STUCK-OUT TONGUE
+<Multi_key> <Return> <semicolon> <p>           :  "😜"   U1F61C   # FACE WITH STUCK-OUT TONGUE AND WINKING EYE
+<Multi_key> <Return> <semicolon> <P>           :  "😜"   U1F61C   # FACE WITH STUCK-OUT TONGUE AND WINKING EYE
 <Multi_key> <Return> <semicolon> <parenleft>   :  "😢"   U1F622   # CRYING FACE
-<Multi_key> <Return> <p> <f> <t>               :  "😤"   U1F624   # FACE WITH STEAM FROM NOSE
+<Multi_key> <Return> <p> <f> <t>               :  "😤"   U1F624   # FACE WITH LOOK OF TRIUMPH
 <Multi_key> <Return> <a> <h> <h>               :  "😩"   U1F629   # WEARY FACE
 <Multi_key> <Return> <D> <semicolon>           :  "😭"   U1F62D   # LOUDLY CRYING FACE
 <Multi_key> <Return> <colon> <o>               :  "😮"   U1F62E   # FACE WITH OPEN MOUTH
@@ -258,10 +258,11 @@ include "%L"
 <Multi_key> <Return> <colon> <space>           :  "😶"   U1F636   # FACE WITHOUT MOUTH
 <Multi_key> <Return> <parenright> <colon>      :  "🙃"   U1F643   # UPSIDE-DOWN FACE
 <Multi_key> <Return> <h> <m> <m>               :  "🤔"   U1F914   # THINKING FACE
-<Multi_key> <Return> <b> <o> <t>               :  "🤖"   U1F916   # ROBOT
+<Multi_key> <Return> <b> <o> <t>               :  "🤖"   U1F916   # ROBOT FACE
 <Multi_key> <Return> <h> <u> <g>               :  "🤗"   U1F917   # HUGGING FACE
-<Multi_key> <Return> <6> <6> <6>               :  "🤘"   U1F91B   # SIGN OF THE HORNS
-<Multi_key> <Return> <y> <e> <e>               :  "🤠"   U1F920   # COWBOY HAT FACE
-<Multi_key> <Return> <Y> <E> <E>               :  "🤠"   U1F920   # COWBOY HAT FACE
+<Multi_key> <Return> <6> <6> <6>               :  "🤘"   U1F918   # SIGN OF THE HORNS
+<Multi_key> <Return> <y> <e> <e>               :  "🤠"   U1F920   # FACE WITH COWBOY HAT
+<Multi_key> <Return> <Y> <E> <E>               :  "🤠"   U1F920   # FACE WITH COWBOY HAT
 <Multi_key> <Return> <c> <l> <n>               :  "🤡"   U1F921   # CLOWN FACE
 <Multi_key> <Return> <r> <o> <f> <l>           :  "🤣"   U1F923   # ROLLING ON THE FLOOR LAUGHING
+<Multi_key> <Return> <bracketleft> <B> <bracketright>  :  "🅱️"     # NEGATIVE SQUARED LATIN CAPITAL LETTER B
