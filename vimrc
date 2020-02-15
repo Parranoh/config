@@ -18,25 +18,31 @@ Plugin 'gosukiwi/vim-atom-dark'
 call vundle#end()            " required
 filetype plugin indent on    " required
 
+let fortran_free_source=1
+let fortran_more_precise=1
+
 set nu
 syntax enable
-set autoindent
-set smartindent
+set cindent
 set tabstop=4
-set shiftwidth=4
+set softtabstop=-1
+set shiftwidth=0
 set expandtab
+set incsearch
+set ignorecase
+set smartcase
+set hlsearch
+set foldmethod=marker
 set textwidth=80
 set background=dark
 set showmatch
-set hlsearch
-set foldmethod=marker
+set showcmd
 :highlight ExtraWhitespace ctermbg=green guibg=darkgreen
 :match ExtraWhitespace /\s\+$/
 set backupdir=.backup,~/.backup,/tmp//
 set directory=.swp/,~/.swp/,/tmp//
 set undodir=.undo/,~/.undo/,/tmp//
 
-set nocp
 filetype plugin on
 set omnifunc=syntaxcomplete#Complete
 
