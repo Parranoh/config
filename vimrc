@@ -14,6 +14,9 @@ Plugin 'eagletmt/neco-ghc'
 
 Plugin 'gosukiwi/vim-atom-dark'
 
+Plugin 'LucHermitte/lh-vim-lib'
+Plugin 'LucHermitte/lh-brackets'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
