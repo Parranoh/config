@@ -507,7 +507,7 @@
   #######################[ background_jobs: presence of background jobs ]#######################
   # Background jobs color.
   # typeset -g POWERLEVEL9K_BACKGROUND_JOBS_FOREGROUND=6
-  # typeset -g POWERLEVEL9K_BACKGROUND_JOBS_BACKGROUND=0
+  typeset -g POWERLEVEL9K_BACKGROUND_JOBS_BACKGROUND=16
   # Don't show the number of background jobs.
   typeset -g POWERLEVEL9K_BACKGROUND_JOBS_VERBOSE=false
   # Custom icon.
