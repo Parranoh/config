@@ -40,6 +40,7 @@ set textwidth=80
 set background=dark
 set showmatch
 set showcmd
+set mouse=a
 :highlight ExtraWhitespace ctermbg=green guibg=darkgreen
 :match ExtraWhitespace /\s\+$/
 set backupdir=.backup,~/.backup,/tmp//
