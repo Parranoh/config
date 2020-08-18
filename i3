@@ -37,6 +37,12 @@ bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
 bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
 
+# function keys to adjust display brightness
+bindsym XF86MonBrightnessUp exec ~/.bash_scripts/brightness 5
+bindsym Control+XF86MonBrightnessUp exec ~/.bash_scripts/brightness 50
+bindsym XF86MonBrightnessDown exec ~/.bash_scripts/brightness -5
+bindsym Control+XF86MonBrightnessDown exec ~/.bash_scripts/brightness -50
+
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
@@ -71,11 +77,21 @@ bindsym $mod+Shift+j move down
 bindsym $mod+Shift+k move up
 bindsym $mod+Shift+l move right
 
+# move focused workspace
+bindsym $mod+Control+Shift+h move workspace to output left
+bindsym $mod+Control+Shift+j move workspace to output down
+bindsym $mod+Control+Shift+k move workspace to output up
+bindsym $mod+Control+Shift+l move workspace to output right
+
 # alternatively, you can use the cursor keys:
 bindsym $mod+Shift+Left move left
 bindsym $mod+Shift+Down move down
 bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
+bindsym $mod+Control+Shift+Left move workspace to output left
+bindsym $mod+Control+Shift+Down move workspace to output down
+bindsym $mod+Control+Shift+Up move workspace to output up
+bindsym $mod+Control+Shift+Right move workspace to output right
 
 # split in horizontal orientation
 bindsym $mod+v split h
@@ -174,12 +190,34 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
+# colors
+#class                  border  backgr. text    indicator child_border
+client.focused          #222222 #000000 #ffffff #aaaaaa   #202020
+client.focused_inactive #333333 #444444 #ffffff #484e50   #5f676a
+client.unfocused        #333333 #222222 #888888 #292d2e   #222222
+client.urgent           #2f343a #900000 #ffffff #900000   #900000
+client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
+client.background       #000000
+
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
         status_command i3status
+        colors {
+                background #000000
+                statusline #ffffff
+                separator  #666666
+
+                #class             border  background text
+                focused_workspace  #222222 #000000    #ffffff
+                active_workspace   #333333 #aaaaaa    #ffffff
+                inactive_workspace #333333 #222222    #888888
+                urgent_workspace   #2f343a #900000    #ffffff
+                binding_mode       #2f343a #900000    #ffffff
+        }
 }
 
 bindsym $mod+a exec nautilus -w
+bindsym $mod+x exec "xset +dpms ; i3lock -enuti/usr/share/backgrounds/hardy_wallpaper_uhd.png ; xset -dpms"
 
 exec gnome-terminal
