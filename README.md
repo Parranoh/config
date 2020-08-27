@@ -12,6 +12,5 @@ delete all lines containing the string `16` from `p10k.zsh`, for example using
 `sed(1)`:
 
 ```sh
-sed -r '/16/d' <p10k.zsh >p10k.zsh.tmp
-mv p10k.zsh.tmp p10k.zsh
+sed -ri '/16/d' p10k.zsh
 ```
