@@ -15,8 +15,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-# ZSH_THEME="gallois"
-ZSH_THEME="powerlevel10k/powerlevel10k"
+ZSH_THEME="powerlevel10k/powerlevel10k"  # romkatv/powerlevel10k
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -78,8 +77,9 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   git
-  alias-tips
+  alias-tips                # djui/alias-tips
   sudo
+  fast-syntax-highlighting  # zdharma/fast-syntax-highlighting
 )
 
 export ZSH_PLUGINS_ALIAS_TIPS_FORCE=1
@@ -130,3 +130,5 @@ bindkey "^[OA" up-line-or-beginning-search
 bindkey "^[OB" down-line-or-beginning-search
 bindkey "^[[A" up-line-or-beginning-search
 bindkey "^[[B" down-line-or-beginning-search
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
