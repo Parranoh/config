@@ -20,6 +20,8 @@ Plugin 'LucHermitte/lh-brackets'
 
 Plugin 'tpope/vim-fugitive'
 
+Plugin 'preservim/nerdtree'
+
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 
@@ -73,6 +75,7 @@ set undodir=.undo/,~/.undo/,/tmp//
 "" custom mapping
 nnoremap <C-N> :bnext<CR>
 nnoremap <C-P> :bprevious<CR>
+nnoremap <Leader>a :NERDTreeToggle<CR>
 
 "" plugin options
 filetype plugin on
