@@ -11,17 +11,14 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
+Plugin 'tpope/vim-repeat'
+Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-commentary'
+Plugin 'vim-scripts/ReplaceWithRegister'
 Plugin 'eagletmt/neco-ghc'
-
 Plugin 'gosukiwi/vim-atom-dark'
-
-Plugin 'LucHermitte/lh-vim-lib'
-Plugin 'LucHermitte/lh-brackets'
-
 Plugin 'tpope/vim-fugitive'
-
 Plugin 'preservim/nerdtree'
-
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 
@@ -76,6 +73,30 @@ set undodir=.undo/,~/.undo/,/tmp//
 nnoremap <C-N> :bnext<CR>
 nnoremap <C-P> :bprevious<CR>
 nnoremap <Leader>a :NERDTreeToggle<CR>
+" automagically close brackets
+inoremap ( ()<left>
+inoremap [ []<left>
+inoremap { {}<left>
+inoremap {<CR> {<CR>}<Esc>O
+inoremap {;<CR> {<CR>};<Esc>O
+autocmd FileType html inoremap < <><left>
+autocmd FileType xml inoremap < <><left>
+" automagically close quotes, brackets
+inoremap <expr> ' strpart(getline('.'), col('.')-1, 1) == "'" ? "\<Right>" : "''<Left>"
+inoremap <expr> " strpart(getline('.'), col('.')-1, 1) == '"' ? "\<Right>" : '""<Left>'
+inoremap <expr> ) strpart(getline('.'), col('.')-1, 1) == ")" ? "\<Right>" : ")"
+inoremap <expr> ] strpart(getline('.'), col('.')-1, 1) == "]" ? "\<Right>" : "]"
+inoremap <expr> } strpart(getline('.'), col('.')-1, 1) == "}" ? "\<Right>" : "}"
+autocmd FileType html inoremap <expr> > strpart(getline('.'), col('.')-1, 1) == ">" ? "\<Right>" : ">"
+autocmd FileType xml inoremap <expr> > strpart(getline('.'), col('.')-1, 1) == ">" ? "\<Right>" : ">"
+" automagically delete closing quote, brackets if empty
+let b:brackets = ["''", '""', "()", "[]", "{}"]
+autocmd FileType html let b:brackets = ["''", '""', "()", "[]", "{}", "<>"]
+autocmd FileType xml let b:brackets = ["''", '""', "()", "[]", "{}", "<>"]
+inoremap <expr> <BS> index(b:brackets, strpart(getline('.'), col('.')-2, 2)) != -1 ? "<BS><Del>" : "<BS>"
+
+" aliases
+command -nargs=* -complete=help H vert bo h <args>
 
 "" plugin options
 filetype plugin on
