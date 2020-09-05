@@ -14,3 +14,18 @@ delete all lines containing the string `16` from `p10k.zsh`, for example using
 ```sh
 sed -ri '/16/d' p10k.zsh
 ```
+
+## Oh My Zsh
+To automatically update custom plugins and themes along with Oh My Zsh, put this
+at the end of `$ZSH/tools/upgrade.sh`:
+
+```sh
+printf "\n${BLUE}%s${RESET}\n" "Updating custom plugins and themes"
+cd custom/
+for plugin in plugins/*/ themes/*/; do
+  if [ -d "$plugin/.git" ]; then
+     printf "${YELLOW}%s${RESET}\n" "${plugin%/}"
+     git -C "$plugin" pull
+  fi
+done
+```
