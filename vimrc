@@ -87,12 +87,14 @@ inoremap <expr> " strpart(getline('.'), col('.')-1, 1) == '"' ? "\<Right>" : '""
 inoremap <expr> ) strpart(getline('.'), col('.')-1, 1) == ")" ? "\<Right>" : ")"
 inoremap <expr> ] strpart(getline('.'), col('.')-1, 1) == "]" ? "\<Right>" : "]"
 inoremap <expr> } strpart(getline('.'), col('.')-1, 1) == "}" ? "\<Right>" : "}"
+autocmd FileType haskell iunmap '
 autocmd FileType html inoremap <expr> > strpart(getline('.'), col('.')-1, 1) == ">" ? "\<Right>" : ">"
 autocmd FileType xml inoremap <expr> > strpart(getline('.'), col('.')-1, 1) == ">" ? "\<Right>" : ">"
 " automagically delete closing quote, brackets if empty
-let b:brackets = ["''", '""', "()", "[]", "{}"]
+autocmd BufEnter * let b:brackets = ["''", '""', "()", "[]", "{}"]
 autocmd FileType html let b:brackets = ["''", '""', "()", "[]", "{}", "<>"]
 autocmd FileType xml let b:brackets = ["''", '""', "()", "[]", "{}", "<>"]
+autocmd FileType haskell let b:brackets = ['""', "()", "[]", "{}"]
 inoremap <expr> <BS> index(b:brackets, strpart(getline('.'), col('.')-2, 2)) != -1 ? "<BS><Del>" : "<BS>"
 
 " aliases
