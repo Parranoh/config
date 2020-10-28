@@ -24,45 +24,45 @@ font pango:MesloLGS NF 9
 
 # xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
 # screen before suspend. Use loginctl lock-session to lock your screen.
-exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
+exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork &
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
-exec --no-startup-id nm-applet
+exec --no-startup-id nm-applet &
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10% && $refresh_i3status
-bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
-bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status &
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10% && $refresh_i3status &
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status &
+bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status &
 
 # media player controls
-bindsym XF86AudioPlay exec playerctl play-pause
-bindsym XF86AudioNext exec playerctl next
-bindsym XF86AudioPrev exec playerctl prev
+bindsym XF86AudioPlay exec playerctl play-pause &
+bindsym XF86AudioNext exec playerctl next &
+bindsym XF86AudioPrev exec playerctl prev &
 
 # function keys to adjust display brightness
-bindsym XF86MonBrightnessUp exec ~/.bash_scripts/brightness 5
-bindsym Control+XF86MonBrightnessUp exec ~/.bash_scripts/brightness 50
-bindsym XF86MonBrightnessDown exec ~/.bash_scripts/brightness -5
-bindsym Control+XF86MonBrightnessDown exec ~/.bash_scripts/brightness -50
+bindsym XF86MonBrightnessUp exec ~/.bash_scripts/brightness 5 &
+bindsym Control+XF86MonBrightnessUp exec ~/.bash_scripts/brightness 50 &
+bindsym XF86MonBrightnessDown exec ~/.bash_scripts/brightness -5 &
+bindsym Control+XF86MonBrightnessDown exec ~/.bash_scripts/brightness -50 &
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec i3-sensible-terminal
+bindsym $mod+Return exec i3-sensible-terminal &
 
 # kill focused window
 bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
-#bindsym $mod+d exec dmenu_run
+bindsym $mod+Shift+d exec dmenu_run &
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
-bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
+bindsym $mod+d exec --no-startup-id j4-dmenu-desktop &
 
 # change focus
 bindsym $mod+h focus left
@@ -166,7 +166,7 @@ bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
+bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit' &"
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -208,6 +208,7 @@ client.background       #000000
 # finds out, if available)
 bar {
         status_command i3status
+        tray_output primary
         colors {
                 background #000000
                 statusline #ffffff
@@ -222,7 +223,7 @@ bar {
         }
 }
 
-bindsym $mod+a exec nautilus -w
-bindsym $mod+x exec "xset +dpms ; i3lock -enuti/usr/share/backgrounds/hardy_wallpaper_uhd.png ; xset -dpms"
+bindsym $mod+a exec nautilus -w &
+bindsym $mod+x exec "xset +dpms ; i3lock -enuti/usr/share/backgrounds/hardy_wallpaper_uhd.png ; xset -dpms &"
 
-exec gnome-terminal
+exec gnome-terminal &
