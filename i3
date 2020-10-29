@@ -58,7 +58,7 @@ bindsym $mod+Return exec i3-sensible-terminal &
 bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
-bindsym $mod+Shift+d exec dmenu_run &
+bindsym $mod+Shift+d exec --no-startup-id dmenu_run &
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
@@ -195,6 +195,22 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
+set $hardy /usr/share/backgrounds/hardy_wallpaper_uhd.png
+set $system_mode System: (l)ock, (e)xit, (s)uspend, (h)ibernate, (r)eboot, (p)oweroff
+mode "$system_mode" {
+    bindsym l mode "default", exec --no-startup-id "{ xset +dpms ; i3lock -fenuti $hardy ; xset -dpms ; } &"
+    bindsym e mode "default", exit
+    bindsym s mode "default", exec --no-startup-id "{ i3lock -feuti $hardy && systemctl suspend } &"
+    bindsym h mode "default", exec --no-startup-id "{ i3lock -feuti $hardy && systemctl hibernate } &"
+    bindsym r mode "default", exec --no-startup-id "systemctl reboot"
+    bindsym p mode "default", exec --no-startup-id "systemctl poweroff"
+
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+    bindsym $mod+x mode "default"
+}
+bindsym $mod+x mode "$system_mode"
+
 # colors
 #class                  border  backgr. text    indicator child_border
 client.focused          #222222 #000000 #ffffff #aaaaaa   #202020
@@ -224,6 +240,5 @@ bar {
 }
 
 bindsym $mod+a exec nautilus -w &
-bindsym $mod+x exec "xset +dpms ; i3lock -enuti/usr/share/backgrounds/hardy_wallpaper_uhd.png ; xset -dpms &"
 
 exec gnome-terminal &
