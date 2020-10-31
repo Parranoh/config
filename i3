@@ -51,11 +51,11 @@ bindsym $mod+Return exec i3-sensible-terminal &
 bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
-bindsym $mod+Shift+d exec --no-startup-id dmenu_run &
+bindsym $mod+Shift+d exec dmenu_run &
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
-bindsym $mod+d exec --no-startup-id j4-dmenu-desktop &
+bindsym $mod+d exec j4-dmenu-desktop &
 
 # change focus
 bindsym $mod+h focus left
@@ -247,7 +247,7 @@ bar {
 
 bindsym $mod+a exec nautilus -w &
 
-exec i3-sensible-terminal &
+exec --no-startup-id i3-msg "workspace number $ws1 ; exec i3-sensible-terminal &" &
 exec spotify &
 exec discord &
 
