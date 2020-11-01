@@ -35,6 +35,11 @@ bindsym XF86AudioPlay exec playerctl play-pause &
 bindsym XF86AudioNext exec playerctl next &
 bindsym XF86AudioPrev exec playerctl prev &
 
+# other extra keys
+bindsym XF86Explorer exec nautilus &
+bindsym XF86Mail exec evolution &
+bindsym XF86HomePage exec firefox &
+
 # function keys to adjust display brightness
 bindsym XF86MonBrightnessUp exec ~/.bash_scripts/brightness 5 &
 bindsym Control+XF86MonBrightnessUp exec ~/.bash_scripts/brightness 50 &
@@ -122,6 +127,8 @@ bindsym $mod+F1 exec --no-startup-id ~/.bash_scripts/select-layout.sh even-verti
 bindsym $mod+F2 exec --no-startup-id ~/.bash_scripts/select-layout.sh even-horizontal &
 bindsym $mod+F3 exec --no-startup-id ~/.bash_scripts/select-layout.sh main-horizontal &
 bindsym $mod+F4 exec --no-startup-id ~/.bash_scripts/select-layout.sh main-vertical &
+bindsym $mod+Shift+equal exec --no-startup-id ~/.bash_scripts/select-layout.sh main-horizontal &
+bindsym $mod+equal exec --no-startup-id ~/.bash_scripts/select-layout.sh main-vertical &
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
@@ -244,8 +251,6 @@ bar {
                 binding_mode       #2f343a #900000    #ffffff
         }
 }
-
-bindsym $mod+a exec nautilus -w &
 
 exec --no-startup-id i3-msg "workspace number $ws1 ; exec i3-sensible-terminal &" &
 exec spotify &
