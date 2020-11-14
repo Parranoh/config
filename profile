@@ -38,6 +38,9 @@ setxkbmap -option compose:menu
 # Workman keyboard layout
 setxkbmap us workman-p
 
+# swap escape and caps lock
+setxkbmap -option caps:swapescape
+
 # turn on num lock
 xdotool key Num_Lock
 
