@@ -26,6 +26,6 @@ alias jfxc='javac --module-path $PATH_TO_FX --add-modules=javafx.controls'
 alias jfx='java --module-path $PATH_TO_FX --add-modules=javafx.controls'
 
 mkdir /tmp/recovery 2>/dev/null
-rm () { mv $* /tmp/recovery/ }
+rm () { mv $* /tmp/recovery/ ; }
 
-utoh () { env printf -- "$*" | iconv -f utf-8 -t ucs-4le | od -tx4 | cut -c9- }
+utoh () { env printf -- "$*" | iconv -f utf-8 -t ucs-4le | od -tx4 | cut -c9- ; }
