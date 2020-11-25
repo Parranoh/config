@@ -79,16 +79,16 @@ inoremap [ []<left>
 inoremap { {}<left>
 inoremap {<CR> {<CR>}<Esc>O
 inoremap {;<CR> {<CR>};<Esc>O
-autocmd FileType html inoremap < <><left>
-autocmd FileType xml inoremap < <><left>
+autocmd FileType html inoremap <buffer> < <><left>
+autocmd FileType xml inoremap <buffer> < <><left>
 " automagically close quotes, brackets
 inoremap <expr> ' strpart(getline('.'), col('.')-1, 1) == "'" ? "\<Right>" : "''<Left>"
 inoremap <expr> " strpart(getline('.'), col('.')-1, 1) == '"' ? "\<Right>" : '""<Left>'
 inoremap <expr> ) strpart(getline('.'), col('.')-1, 1) == ")" ? "\<Right>" : ")"
 inoremap <expr> ] strpart(getline('.'), col('.')-1, 1) == "]" ? "\<Right>" : "]"
 inoremap <expr> } strpart(getline('.'), col('.')-1, 1) == "}" ? "\<Right>" : "}"
-autocmd FileType haskell,lhaskell iunmap '
-autocmd FileType html,xml inoremap <expr> > strpart(getline('.'), col('.')-1, 1) == ">" ? "\<Right>" : ">"
+autocmd FileType haskell,lhaskell inoremap <buffer> ' '
+autocmd FileType html,xml inoremap <buffer> <expr> > strpart(getline('.'), col('.')-1, 1) == ">" ? "\<Right>" : ">"
 " automagically delete closing quote, brackets if empty
 autocmd BufEnter * let b:brackets = ["''", '""', "()", "[]", "{}"]
 autocmd FileType html,xml let b:brackets = ["''", '""', "()", "[]", "{}", "<>"]
