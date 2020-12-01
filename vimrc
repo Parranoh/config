@@ -15,7 +15,6 @@ Plugin 'tpope/vim-repeat'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-commentary'
 Plugin 'vim-scripts/ReplaceWithRegister'
-Plugin 'eagletmt/neco-ghc'
 Plugin 'gosukiwi/vim-atom-dark'
 Plugin 'tpope/vim-fugitive'
 Plugin 'preservim/nerdtree'
@@ -112,10 +111,6 @@ let OmniCpp_MayCompleteDot = 1
 let OmniCpp_MayCompleteArrow = 1
 let OmniCpp_MayCompleteScope = 1
 let OmniCpp_DefaultNamespaces = ["std", "_GLIBCXX_STD"]
-
-let g:haskellmode_completion_ghc = 0
-let g:necoghc_enable_detailed_browse = 1
-autocmd FileType haskell setlocal omnifunc=necoghc#omnifunc
 
 au CursorMovedI,InsertLeave * if pumvisible() == 0|silent! pclose|endif
 set completeopt=menuone,menu,longest,preview
