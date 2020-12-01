@@ -72,6 +72,7 @@ set undodir=.undo/,~/.undo/,/tmp//
 "" custom mapping
 nnoremap <C-N> :bnext<CR>
 nnoremap <C-P> :bprevious<CR>
+nnoremap <Space> :
 nnoremap <Leader>a :NERDTreeToggle<CR>
 " automagically close brackets
 inoremap ( ()<left>
