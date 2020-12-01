@@ -27,10 +27,15 @@ if [ -d "$HOME/.local/bin" ] ; then
 fi
 
 # no display timeout
-xset s off -dpms
+xset dpms 10 10 10
+xset -dpms
+xset s off
 
 # faster repeat rate
 xset r rate 200 30
+
+# no mouse accel
+xset m 0
 
 # menu key as Multi_key
 setxkbmap -option compose:menu
