@@ -264,6 +264,7 @@ include "%L"
 <Multi_key> <Return> <D> <semicolon>           :  "😭"   U1F62D   # LOUDLY CRYING FACE
 <Multi_key> <Return> <colon> <o>               :  "😮"   U1F62E   # FACE WITH OPEN MOUTH
 <Multi_key> <Return> <colon> <O>               :  "😱"   U1F631   # FACE SCREAMING IN FEAR
+<Multi_key> <Return> <w> <a> <u>               :  "😳"   U1F633   # FLUSHED FACE
 <Multi_key> <Return> <colon> <space>           :  "😶"   U1F636   # FACE WITHOUT MOUTH
 <Multi_key> <Return> <parenright> <colon>      :  "🙃"   U1F643   # UPSIDE-DOWN FACE
 <Multi_key> <Return> <h> <m> <m>               :  "🤔"   U1F914   # THINKING FACE
