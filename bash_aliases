@@ -1,4 +1,4 @@
-alias grep='grep --color=auto --exclude-dir={.bzr,CVS,.git,.hg,.svn} -E'
+alias grep='grep --color=auto --exclude-dir={.bzr,CVS,.git,.hg,.svn} -P'
 alias shutdown='shutdown "now"'
 alias ca='clear; cd'
 alias sed='sed -r'
