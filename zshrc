@@ -76,16 +76,19 @@ ZSH_THEME="powerlevel10k/powerlevel10k"  # romkatv/powerlevel10k
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  git
-  alias-tips                # djui/alias-tips
-  sudo
-  fast-syntax-highlighting  # zdharma/fast-syntax-highlighting
+    git
+    alias-tips                # djui/alias-tips
+    sudo
+    fast-syntax-highlighting  # zdharma/fast-syntax-highlighting
+    zsh-completions           # zsh-users/zsh-completions
 )
 
 export ZSH_PLUGINS_ALIAS_TIPS_FORCE=1
 export ZSH_PLUGINS_ALIAS_TIPS_EXCLUDES="_"
 
 source $ZSH/oh-my-zsh.sh
+
+autoload -U compinit && compinit
 
 # User configuration
 
