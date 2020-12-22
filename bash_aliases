@@ -29,3 +29,5 @@ mkdir /tmp/recovery 2>/dev/null
 rm () { mv $* /tmp/recovery/ ; }
 
 utoh () { env printf -- "$*" | iconv -f utf-8 -t ucs-4le | od -tx4 | cut -c9- ; }
+
+mcd () { mkdir "$1" && cd "$1" ; }
