@@ -33,7 +33,7 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 # media player controls
 bindsym XF86AudioPlay exec playerctl play-pause &
 bindsym XF86AudioNext exec playerctl next &
-bindsym XF86AudioPrev exec playerctl prev &
+bindsym XF86AudioPrev exec playerctl previous &
 
 # other extra keys
 bindsym XF86Explorer exec nautilus &
