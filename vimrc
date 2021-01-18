@@ -49,8 +49,8 @@ autocmd bufwritepre * set expandtab | retab 4
 autocmd bufwritepost * set noexpandtab | silent! call RetabIndents()
 
 "" options
-set nu
-set rnu
+set number relativenumber
+autocmd TerminalOpen * if &buftype == 'terminal' | setlocal nobuflisted nonumber norelativenumber | endif
 syntax enable
 set cindent
 set incsearch
