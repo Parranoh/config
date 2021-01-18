@@ -50,4 +50,4 @@ setxkbmap -option caps:swapescape
 xdotool key Num_Lock
 
 # set wallpaper
-feh --bg-fill /usr/share/backgrounds/hardy_wallpaper_uhd.png
+~/.fehbg
