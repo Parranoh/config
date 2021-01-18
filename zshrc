@@ -84,7 +84,7 @@ plugins=(
 )
 
 export ZSH_PLUGINS_ALIAS_TIPS_FORCE=1
-export ZSH_PLUGINS_ALIAS_TIPS_EXCLUDES="_"
+export ZSH_PLUGINS_ALIAS_TIPS_EXCLUDES="_ g"
 
 source $ZSH/oh-my-zsh.sh
 
