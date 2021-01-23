@@ -51,3 +51,5 @@ xdotool key Num_Lock
 
 # set wallpaper
 ~/.fehbg
+
+export TERMINAL=kitty

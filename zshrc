@@ -92,6 +92,13 @@ autoload -U compinit && compinit
 
 # User configuration
 
+if
+    [[ $KITTY = 1 ]]
+then
+    kitty + complete setup zsh | source /dev/stdin
+    alias ssh='kitty +kitten ssh'
+fi
+
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
