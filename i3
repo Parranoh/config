@@ -190,8 +190,6 @@ bindsym $mod+Mod2+Shift+KP_Insert move container to workspace number $ws10
 # assign applications to workspaces
 assign [class="^Evolution$"] → $ws2
 assign [class="^Firefox$"] → $ws3
-# see https://i3wm.org/docs/userguide.html#assign_workspace about Spotify
-for_window [class="^Spotify$"] move workspace $ws9
 assign [class="^discord$"] → $ws10
 
 # reload the configuration file
@@ -273,7 +271,7 @@ bar {
 }
 
 exec --no-startup-id i3-msg "workspace number $ws1 ; exec i3-sensible-terminal &" &
-exec spotify &
+exec --no-startup-id i3-msg "workspace number $ws9 ; exec i3-sensible-terminal ncspot &" &
 exec ~/.bash_scripts/discord-keep-alive.sh &
 
 exec --no-startup-id "xrandr --output DP-5 --primary --mode 1920x1080 --output HDMI-0 --mode 1920x1080 --right-of DP-5 --output DVI-D-0 --mode 1920x1080 --left-of DP-5"
