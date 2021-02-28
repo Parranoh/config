@@ -1,0 +1,25 @@
+use_nerdfont = true
+notify = true
+volnorm = false
+
+[saved_state]
+volume = 80
+repeat = "no"
+shuffle = false
+
+[theme]
+background = "#000000"
+primary = "#4e5ab7"
+secondary = "#f81118"
+title = "#1081d6"
+playing = "#1081d6"
+playing_bg = "#1f1f1f"
+highlight = "#4e5ab7"
+highlight_bg = "#2dc55e"
+error = "#4e5ab7"
+error_bg = "#d6dbe5"
+statusbar = "#000000"
+statusbar_progress = "#1081d6"
+statusbar_bg = "#1081d6"
+cmdline = "#4e5ab7"
+cmdline_bg = "#000000"
