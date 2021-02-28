@@ -92,12 +92,7 @@ autoload -U compinit && compinit
 
 # User configuration
 
-if
-    [[ $KITTY = 1 ]]
-then
-    kitty + complete setup zsh | source /dev/stdin
-    alias ssh='kitty +kitten ssh'
-fi
+[[ $KITTY = 1 ]] && kitty + complete setup zsh | source /dev/stdin
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
