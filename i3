@@ -232,8 +232,8 @@ set $system_mode System: (l)ock, (e)xit, (s)uspend, (h)ibernate, (r)eboot, (p)ow
 mode "$system_mode" {
     bindsym l mode "default", exec --no-startup-id "{ xset +dpms ; i3lock -fenti $hardy ; xset -dpms ; } &"
     bindsym e mode "default", exit
-    bindsym s mode "default", exec --no-startup-id "{ i3lock -feti $hardy && systemctl suspend } &"
-    bindsym h mode "default", exec --no-startup-id "{ i3lock -feti $hardy && systemctl hibernate } &"
+    bindsym s mode "default", exec --no-startup-id "{ i3lock -feti $hardy && systemctl suspend ; } &"
+    bindsym h mode "default", exec --no-startup-id "{ i3lock -feti $hardy && systemctl hibernate ; } &"
     bindsym r mode "default", exec --no-startup-id "systemctl reboot"
     bindsym p mode "default", exec --no-startup-id "systemctl poweroff"
 
