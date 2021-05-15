@@ -201,35 +201,35 @@ include "%L"
 <Multi_key> <bar> <s> <s>                            : "╷"  U2577  # BOX DRAWINGS LIGHT DOWN
 #
 # Other
-<Multi_key> <l> <s>                        : "ſ"    U017F    # LATIN SMALL LETTER LONG S
-<Multi_key> <l> <z>                        : "ʒ"    U0292    # LATIN SMALL LETTER EZH
-<Multi_key> <l> <Z>                        : "Ʒ"    U01B7    # LATIN CAPITAL LETTER EZH
-<Multi_key> <Q> <E> <D>                    : "■"    U25A0    # BLACK SQUARE
-<Multi_key> <q> <e> <d>                    : "□"    U25A1    # WHITE SQUARE
-<Multi_key> <minus> <v>                    : "∀"    U2200    # FOR ALL
-<Multi_key> <minus> <bracketright>         : "∃"    U2203    # THERE EXISTS
-<Multi_key> <slash> <minus> <bracketright> : "∄"    U2204    # THERE DOES NOT EXIST
-<Multi_key> <minus> <parenleft>            : "∈"    U2208    # ELEMENT OF
-<Multi_key> <slash> <minus> <parenleft>    : "∉"    U2209    # NOT AN ELEMENT OF
-<Multi_key> <minus> <parenright>           : "∋"    U220B    # CONTAINS AS MEMBER
-<Multi_key> <slash> <minus> <parenright>   : "∌"    U220C    # DOES NOT CONTAIN AS MEMBER
-<Multi_key> <tilde> <equal>                : "≅"    U2245    # APPROXIMATELY EQUAL TO
-<Multi_key> <tilde> <slash> <equal>        : "≆"    U2246    # APPROXIMATELY BUT NOT ACTUALLY EQUAL TO
-<Multi_key> <slash> <tilde> <equal>        : "≇"    U2247    # NEITHER APPROXIMATELY NOR ACTUALLY EQUAL TO
-<Multi_key> <tilde> <tilde>                : "≈"    U2248    # ALMOST EQUAL TO
-<Multi_key> <slash> <tilde> <tilde>        : "≉"    U2249    # NOT ALMOST EQUAL TO
-<Multi_key> <colon> <equal>                : "≔"    U2254    # COLON EQUALS
-<Multi_key> <exclam> <equal>               : "≢"    U2262    # NOT IDENTICAL TO
-<Multi_key> <bar> <underscore>             : "⊥"    U22A5    # UP TACK
-<Multi_key> <o> <o>                        : "∘"    U2218    # RING OPERATOR
-<Multi_key> <asterisk> <0>                 : "°"    degree   # DEGREE SIGN
-<Multi_key> <0> <asterisk>                 : "°"    degree   # DEGREE SIGN
-<Multi_key> <less> <asterisk> <greater>    : "⊛"    U229B    # CIRCLED ASTERISK OPERATOR
-<Multi_key> <braceleft> <c>                : "ℂ"    U2102    # DOUBLE-STRUCK CAPTIAL C
-<Multi_key> <braceleft> <n>                : "ℕ"    U2115    # DOUBLE-STRUCK CAPTIAL N
-<Multi_key> <braceleft> <p>                : "ℙ"    U2119    # DOUBLE-STRUCK CAPTIAL P
-<Multi_key> <braceleft> <r>                : "ℝ"    U211D    # DOUBLE-STRUCK CAPTIAL R
-<Multi_key> <braceleft> <z>                : "ℤ"    U2124    # DOUBLE-STRUCK CAPTIAL Z
+<Multi_key> <l> <s>                           : "ſ"    U017F    # LATIN SMALL LETTER LONG S
+<Multi_key> <l> <z>                           : "ʒ"    U0292    # LATIN SMALL LETTER EZH
+<Multi_key> <l> <Z>                           : "Ʒ"    U01B7    # LATIN CAPITAL LETTER EZH
+<Multi_key> <Q> <E> <D>                       : "■"    U25A0    # BLACK SQUARE
+<Multi_key> <q> <e> <d>                       : "□"    U25A1    # WHITE SQUARE
+<Multi_key> <minus> <v>                       : "∀"    U2200    # FOR ALL
+<Multi_key> <minus> <bracketright>            : "∃"    U2203    # THERE EXISTS
+<Multi_key> <slash> <minus> <bracketright>    : "∄"    U2204    # THERE DOES NOT EXIST
+<Multi_key> <minus> <parenleft>               : "∈"    U2208    # ELEMENT OF
+<Multi_key> <slash> <minus> <parenleft>       : "∉"    U2209    # NOT AN ELEMENT OF
+<Multi_key> <minus> <parenright>              : "∋"    U220B    # CONTAINS AS MEMBER
+<Multi_key> <slash> <minus> <parenright>      : "∌"    U220C    # DOES NOT CONTAIN AS MEMBER
+<Multi_key> <asciitilde> <equal>              : "≅"    U2245    # APPROXIMATELY EQUAL TO
+<Multi_key> <asciitilde> <slash> <equal>      : "≆"    U2246    # APPROXIMATELY BUT NOT ACTUALLY EQUAL TO
+<Multi_key> <slash> <asciitilde> <equal>      : "≇"    U2247    # NEITHER APPROXIMATELY NOR ACTUALLY EQUAL TO
+<Multi_key> <asciitilde> <asciitilde>         : "≈"    U2248    # ALMOST EQUAL TO
+<Multi_key> <slash> <asciitilde> <asciitilde> : "≉"    U2249    # NOT ALMOST EQUAL TO
+<Multi_key> <colon> <equal>                   : "≔"    U2254    # COLON EQUALS
+<Multi_key> <exclam> <equal>                  : "≢"    U2262    # NOT IDENTICAL TO
+<Multi_key> <bar> <underscore>                : "⊥"    U22A5    # UP TACK
+<Multi_key> <o> <o>                           : "∘"    U2218    # RING OPERATOR
+<Multi_key> <asterisk> <0>                    : "°"    degree   # DEGREE SIGN
+<Multi_key> <0> <asterisk>                    : "°"    degree   # DEGREE SIGN
+<Multi_key> <less> <asterisk> <greater>       : "⊛"    U229B    # CIRCLED ASTERISK OPERATOR
+<Multi_key> <braceleft> <c>                   : "ℂ"    U2102    # DOUBLE-STRUCK CAPTIAL C
+<Multi_key> <braceleft> <n>                   : "ℕ"    U2115    # DOUBLE-STRUCK CAPTIAL N
+<Multi_key> <braceleft> <p>                   : "ℙ"    U2119    # DOUBLE-STRUCK CAPTIAL P
+<Multi_key> <braceleft> <r>                   : "ℝ"    U211D    # DOUBLE-STRUCK CAPTIAL R
+<Multi_key> <braceleft> <z>                   : "ℤ"    U2124    # DOUBLE-STRUCK CAPTIAL Z
 #
 # Emoji
 <Multi_key> <Return> <asciicircum>             :  "☝"    U261D    # WHITE UP POINTING INDEX
