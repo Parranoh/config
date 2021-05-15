@@ -119,7 +119,6 @@ export PATH_TO_FX="$HOME/.javafx11/javafx-sdk-11.0.2/lib"
 # have less display all kinds of files
 eval $(lesspipe)
 
-PATH="$PATH:$HOME/.bash_scripts:/usr/lib/aspell"
 export LC_TIME='en_US.UTF-8'
 export LC_NUMERIC='en_US.UTF-8'
 

@@ -42,10 +42,10 @@ bindsym XF86Mail exec evolution &
 bindsym XF86HomePage exec firefox &
 
 # function keys to adjust display brightness
-bindsym XF86MonBrightnessUp exec ~/.bash_scripts/brightness 5 && $refresh_i3status &
-bindsym Control+XF86MonBrightnessUp exec ~/.bash_scripts/brightness 50 && $refresh_i3status &
-bindsym XF86MonBrightnessDown exec ~/.bash_scripts/brightness -5 && $refresh_i3status &
-bindsym Control+XF86MonBrightnessDown exec ~/.bash_scripts/brightness -50 && $refresh_i3status &
+bindsym XF86MonBrightnessUp exec brightness 5 && $refresh_i3status &
+bindsym Control+XF86MonBrightnessUp exec brightness 50 && $refresh_i3status &
+bindsym XF86MonBrightnessDown exec brightness -5 && $refresh_i3status &
+bindsym Control+XF86MonBrightnessDown exec brightness -50 && $refresh_i3status &
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -124,12 +124,12 @@ bindsym $mod+u focus parent
 bindsym $mod+n focus child
 
 # select layouts
-bindsym $mod+F1 exec --no-startup-id ~/.bash_scripts/select-layout.sh even-vertical &
-bindsym $mod+F2 exec --no-startup-id ~/.bash_scripts/select-layout.sh even-horizontal &
-bindsym $mod+F3 exec --no-startup-id ~/.bash_scripts/select-layout.sh main-horizontal &
-bindsym $mod+F4 exec --no-startup-id ~/.bash_scripts/select-layout.sh main-vertical &
-bindsym $mod+Shift+equal exec --no-startup-id ~/.bash_scripts/select-layout.sh main-horizontal &
-bindsym $mod+equal exec --no-startup-id ~/.bash_scripts/select-layout.sh main-vertical &
+bindsym $mod+F1 exec --no-startup-id select-layout.sh even-vertical &
+bindsym $mod+F2 exec --no-startup-id select-layout.sh even-horizontal &
+bindsym $mod+F3 exec --no-startup-id select-layout.sh main-horizontal &
+bindsym $mod+F4 exec --no-startup-id select-layout.sh main-vertical &
+bindsym $mod+Shift+equal exec --no-startup-id select-layout.sh main-horizontal &
+bindsym $mod+equal exec --no-startup-id select-layout.sh main-vertical &
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
