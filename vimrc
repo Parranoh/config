@@ -2,6 +2,12 @@ set nocompatible              " be iMproved, required
 filetype off                  " required
 
 "" plugins
+let g:airline_section_z  = '%p%%'                                                             " percent
+let g:airline_section_z .= '%#__accent_bold#%{g:airline_symbols.linenr}%l%#__restore__#'      " current line
+let g:airline_section_z .= '%#__accent_bold#/%L%{g:airline_symbols.maxlinenr}%#__restore__#'  " last line
+let g:airline_section_z .= '%#__accent_bold#%{g:airline_symbols.colnr}%v%#__restore__#'       " current column
+let g:airline_section_z .= ' U+%04B'                                                          " character under cursor
+
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -11,15 +17,15 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
+Plugin 'gosukiwi/vim-atom-dark'
+Plugin 'preservim/nerdtree'
+Plugin 'tpope/vim-commentary'
+Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-repeat'
 Plugin 'tpope/vim-surround'
-Plugin 'tpope/vim-commentary'
-Plugin 'vim-scripts/ReplaceWithRegister'
-Plugin 'gosukiwi/vim-atom-dark'
-Plugin 'tpope/vim-fugitive'
-Plugin 'preservim/nerdtree'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
+Plugin 'vim-scripts/ReplaceWithRegister'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
