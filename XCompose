@@ -200,6 +200,32 @@ include "%L"
 <Multi_key> <bar> <Down> <Down>                      : "╷"  U2577  # BOX DRAWINGS LIGHT DOWN
 <Multi_key> <bar> <s> <s>                            : "╷"  U2577  # BOX DRAWINGS LIGHT DOWN
 #
+# Big parentheses, brackets, braces
+<Multi_key> <parenleft>    <Up>    : "⎛" U239B # LEFT PARENTHESIS UPPER HOOK
+<Multi_key> <parenleft>    <bar>   : "⎜" U239C # LEFT PARENTHESIS EXTENSION
+<Multi_key> <parenleft>    <Down>  : "⎝" U239D # LEFT PARENTHESIS LOWER HOOK
+<Multi_key> <parenright>   <Up>    : "⎞" U239E # RIGHT PARENTHESIS UPPER HOOK
+<Multi_key> <parenright>   <bar>   : "⎟" U239F # RIGHT PARENTHESIS EXTENSION
+<Multi_key> <parenright>   <Down>  : "⎠" U23A0 # RIGHT PARENTHESIS LOWER HOOK
+<Multi_key> <bracketleft>  <Up>    : "⎡" U23A1 # LEFT SQUARE BRACKET UPPER CORNER
+<Multi_key> <bracketleft>  <bar>   : "⎢" U23A2 # LEFT SQUARE BRACKET EXTENSION
+<Multi_key> <bracketleft>  <Down>  : "⎣" U23A3 # LEFT SQUARE BRACKET LOWER CORNER
+<Multi_key> <bracketright> <Up>    : "⎤" U23A4 # RIGHT SQUARE BRACKET UPPER CORNER
+<Multi_key> <bracketright> <bar>   : "⎥" U23A5 # RIGHT SQUARE BRACKET EXTENSION
+<Multi_key> <bracketright> <Down>  : "⎦" U23A6 # RIGHT SQUARE BRACKET LOWER CORNER
+<Multi_key> <braceleft>    <Up>    : "⎧" U23A7 # LEFT CURLY BRACKET UPPER HOOK
+<Multi_key> <braceleft>    <minus> : "⎨" U23A8 # LEFT CURLY BRACKET MIDDLE PIECE
+<Multi_key> <braceleft>    <Down>  : "⎩" U23A9 # LEFT CURLY BRACKET LOWER HOOK
+<Multi_key> <braceleft>    <bar>   : "⎪" U23AA # CURLY BRACKET EXTENSION
+<Multi_key> <braceright>   <bar>   : "⎪" U23AA # CURLY BRACKET EXTENSION
+<Multi_key> <braceright>   <Up>    : "⎫" U23AB # RIGHT CURLY BRACKET UPPER HOOK
+<Multi_key> <braceright>   <minus> : "⎬" U23AC # RIGHT CURLY BRACKET MIDDLE PIECE
+<Multi_key> <braceright>   <Down>  : "⎭" U23AD # RIGHT CURLY BRACKET LOWER HOOK
+<Multi_key> <braceleft>    <s>     : "⎰" U23B0 # UPPER LEFT OR LOWER RIGHT CURLY BRACKET SECTION
+<Multi_key> <braceright>   <s>     : "⎰" U23B0 # UPPER LEFT OR LOWER RIGHT CURLY BRACKET SECTION
+#<Multi_key> <braceleft>    <z>     : "⎱" U23B1 # UPPER RIGHT OR LOWER LEFT CURLY BRACKET SECTION
+<Multi_key> <braceright>   <z>     : "⎱" U23B1 # UPPER RIGHT OR LOWER LEFT CURLY BRACKET SECTION
+#
 # Other
 <Multi_key> <l> <s>                           : "ſ"    U017F    # LATIN SMALL LETTER LONG S
 <Multi_key> <l> <z>                           : "ʒ"    U0292    # LATIN SMALL LETTER EZH
