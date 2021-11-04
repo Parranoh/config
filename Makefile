@@ -19,6 +19,15 @@ i3:	~/.old
 	-mv ~/.config/i3/config -t ~/.old 2>/dev/null
 	ln -s ${ROOT_DIR}/i3 ~/.config/i3/config
 
+i3status:	~/.old
+	-mv ~/.i3status.conf -t ~/.old 2>/dev/null
+	ln -s ${ROOT_DIR}/i3status ~/.i3status.conf
+
+dunst:	~/.old
+	-mv ~/.config/dunst/dunstrc -t ~/.old 2>/dev/null
+	mkdir -p ~/.config/dunst
+	ln -s ${ROOT_DIR}/dunstrc ~/.config/dunst/dunstrc
+
 p10k:	~/.old
 	-mv ~/.p10k.zsh -t ~/.old 2>/dev/null
 	ln -s ${ROOT_DIR}/p10k.zsh ~/.p10k.zsh
