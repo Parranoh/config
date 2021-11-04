@@ -69,6 +69,9 @@ set background=dark
 set showmatch
 set showcmd
 set mouse=a
+if $TERM == 'alacritty'
+    set ttymouse=sgr
+endif
 set hidden
 set backupdir=.backup,~/.backup,/tmp//
 set directory=.swp/,~/.swp/,/tmp//
