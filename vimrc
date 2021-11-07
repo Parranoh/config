@@ -83,6 +83,8 @@ nnoremap <C-P> :bprevious<CR>
 nnoremap <Space> :
 nnoremap <Leader>a :NERDTreeToggle<CR>
 nnoremap Y y$
+vnoremap il <Esc>^vg_
+onoremap il :normal vil<CR>
 " automagically close brackets
 inoremap ( ()<left>
 inoremap [ []<left>
