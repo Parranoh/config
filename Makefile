@@ -21,7 +21,7 @@ i3:	~/.old
 
 i3status:	~/.old
 	-mv ~/.i3status.conf -t ~/.old 2>/dev/null
-	ln -s ${ROOT_DIR}/i3status ~/.i3status.conf
+	ln -s ${ROOT_DIR}/i3status.conf ~/.i3status.conf
 
 dunst:	~/.old
 	-mv ~/.config/dunst/dunstrc -t ~/.old 2>/dev/null
