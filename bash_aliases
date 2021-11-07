@@ -31,5 +31,5 @@ alias mv='mv -nv'
 
 utoh () { env printf -- "$*" | iconv -f utf-8 -t ucs-4le | od -tx4 | cut -c9- ; }
 
-mcd () { mkdir "$@" && cd "${@[-1]}" ; }
+mcd () { mkdir -p "$@" && cd "${@[-1]}" ; }
 [[ -n "$ZSH_VERSION" ]] && compdef mcd=mkdir
