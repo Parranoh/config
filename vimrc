@@ -59,10 +59,8 @@ set number relativenumber
 autocmd TerminalOpen * if &buftype == 'terminal' | setlocal nobuflisted nonumber norelativenumber | endif
 syntax enable
 set cindent
-set incsearch
-set ignorecase
-set smartcase
-set hlsearch
+set incsearch hlsearch
+set ignorecase smartcase
 set foldmethod=marker
 set textwidth=80
 set background=dark
@@ -73,9 +71,11 @@ if $TERM == 'alacritty'
     set ttymouse=sgr
 endif
 set hidden
+set display=truncate scrolloff=5
 set backupdir=.backup,~/.backup,/tmp//
 set directory=.swp/,~/.swp/,/tmp//
 set undodir=.undo/,~/.undo/,/tmp//
+set timeout timeoutlen=1000 ttimeoutlen=100
 
 "" custom mapping
 nnoremap <C-N> :bnext<CR>
