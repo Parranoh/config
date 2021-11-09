@@ -24,9 +24,10 @@ i3status:	~/.old
 	ln -s ${ROOT_DIR}/i3status.conf ~/.i3status.conf
 
 dunst:	~/.old
-	-mv ~/.config/dunst/dunstrc -t ~/.old 2>/dev/null
-	mkdir -p ~/.config/dunst
+	-mv ~/.config/dunst/dunstrc ~/bin/dunst_espeak.sh -t ~/.old 2>/dev/null
+	mkdir -p ~/.config/dunst ~/bin
 	ln -s ${ROOT_DIR}/dunstrc ~/.config/dunst/dunstrc
+	ln -s ${ROOT_DIR}/dunst_espeak.sh ~/bin/dunst_espeak.sh
 
 p10k:	~/.old
 	-mv ~/.p10k.zsh -t ~/.old 2>/dev/null
