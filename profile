@@ -53,3 +53,6 @@ xdotool key Num_Lock
 ~/.fehbg
 
 export TERMINAL=kitty
+export EDITOR=vi
+eval $(lesspipe)
+eval $(dircolors -b)
