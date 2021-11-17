@@ -52,3 +52,7 @@ compose:	~/.old
 zsh:	~/.old
 	-mv ~/.zshrc -t ~/.old 2>/dev/null
 	ln -s ${ROOT_DIR}/zshrc ~/.zshrc
+
+alacritty:	~/.old
+	-mv ~/.alacritty.yml -t ~/.old 2>/dev/null
+	ln -s ${ROOT_DIR}/alacritty.yml ~/.alacritty.yml

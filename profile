@@ -52,7 +52,7 @@ xdotool key Num_Lock
 # set wallpaper
 ~/.fehbg
 
-export TERMINAL=kitty
+export TERMINAL=alacritty
 export EDITOR=vi
 eval $(lesspipe)
 eval $(dircolors -b)

@@ -194,6 +194,7 @@ bindsym $mod+Mod2+Shift+KP_Insert move container to workspace number $ws10
 assign [class="^Evolution$"] → $ws2
 assign [class="^Firefox$"] → $ws3
 assign [class="^discord$"] → $ws10
+for_window [class="^Alacritty$"] border pixel 2
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
