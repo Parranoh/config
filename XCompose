@@ -307,3 +307,82 @@ include "%L"
 <Multi_key> <Return> <c> <l> <n>               :  "🤡"   U1F921   # CLOWN FACE
 <Multi_key> <Return> <r> <o> <f> <l>           :  "🤣"   U1F923   # ROLLING ON THE FLOOR LAUGHING
 <Multi_key> <Return> <bracketleft> <B> <bracketright>  :  "🅱️"     # NEGATIVE SQUARED LATIN CAPITAL LETTER B
+#
+# APL
+<Multi_key> <BackSpace> <underscore>   : "!" U0021 # EXCLAMATION MARK
+<Multi_key> <BackSpace> <k>            : "'" U0027 # APOSTROPHE
+<Multi_key> <BackSpace> <p>            : "*" U002A # ASTERISK
+<Multi_key> <BackSpace> <3>            : "<" U003C # LESS-THAN SIGN
+<Multi_key> <BackSpace> <5>            : "=" U003D # EQUALS SIGN
+<Multi_key> <BackSpace> <7>            : ">" U003E # GREATER-THAN SIGN
+<Multi_key> <BackSpace> <q>            : "?" U003F # QUESTION MARK
+<Multi_key> <BackSpace> <f>            : "_" U005F # LOW LINE
+<Multi_key> <BackSpace> <1>            : "¨" U00A8 # DIAERESIS
+<Multi_key> <BackSpace> <minus>        : "×" U00D7 # MULTIPLICATION SIGN
+<Multi_key> <BackSpace> <equal>        : "÷" U00F7 # DIVISION SIGN
+<Multi_key> <BackSpace> <2>            : "¯" U00AF # MACRON
+<Multi_key> <BackSpace> <bracketleft>  : "←" U2190 # LEFTWARDS ARROW
+<Multi_key> <BackSpace> <y>            : "↑" U2191 # UPWARDS ARROW
+<Multi_key> <BackSpace> <bracketright> : "→" U2192 # RIGHTWARDS ARROW
+<Multi_key> <BackSpace> <u>            : "↓" U2193 # DOWNWARDS ARROW
+<Multi_key> <BackSpace> <h>            : "∆" U2206 # INCREMENT
+<Multi_key> <BackSpace> <g>            : "∇" U2207 # NABLA
+<Multi_key> <BackSpace> <e>            : "∊" U220A # SMALL ELEMENT OF
+<Multi_key> <BackSpace> <j>            : "∘" U2218 # RING OPERATOR
+<Multi_key> <BackSpace> <m>            : "∣" U2223 # DIVIDES
+<Multi_key> <BackSpace> <0>            : "∧" U2227 # LOGICAL AND
+<Multi_key> <BackSpace> <9>            : "∨" U2228 # LOGICAL OR
+<Multi_key> <BackSpace> <c>            : "∩" U2229 # INTERSECTION
+<Multi_key> <BackSpace> <v>            : "∪" U222A # UNION
+<Multi_key> <BackSpace> <t>            : "~" U223C # TILDE OPERATOR
+<Multi_key> <BackSpace> <8>            : "≠" U2260 # NOT EQUAL TO
+<Multi_key> <BackSpace> <colon>        : "≡" U2261 # IDENTICAL TO
+<Multi_key> <BackSpace> <quotedbl>     : "≢" U2262 # NOT IDENTICAL TO
+<Multi_key> <BackSpace> <4>            : "≤" U2264 # LESS-THAN OR EQUAL TO
+<Multi_key> <BackSpace> <6>            : "≥" U2265 # GREATER-THAN OR EQUAL TO
+<Multi_key> <BackSpace> <z>            : "⊂" U2282 # SUBSET OF
+<Multi_key> <BackSpace> <x>            : "⊃" U2283 # SUPERSET OF
+<Multi_key> <BackSpace> <Z>            : "⊆" U2286 # SUBSET OF OR EQUAL TO
+<Multi_key> <BackSpace> <ampersand>    : "⊖" U2296 # CIRCLED MINUS
+<Multi_key> <BackSpace> <backslash>    : "⊢" U22A2 # RIGHT TACK
+<Multi_key> <BackSpace> <bar>          : "⊣" U22A3 # LEFT TACK
+<Multi_key> <BackSpace> <n>            : "⊤" U22A4 # DOWN TACK
+<Multi_key> <BackSpace> <b>            : "⊥" U22A5 # UP TACK
+<Multi_key> <BackSpace> <grave>        : "⋄" U22C4 # DIAMOND OPERATOR
+<Multi_key> <BackSpace> <s>            : "⌈" U2308 # LEFT CEILING
+<Multi_key> <BackSpace> <d>            : "⌊" U230A # LEFT FLOOR
+<Multi_key> <BackSpace> <percent>      : "⌽" U230A # APL FUNCTIONAL SYMBOL CIRCLE STILE
+<Multi_key> <BackSpace> <exclam>       : "⌶" U2336 # APL FUNCTIONAL SYMBOL I-BEAM
+<Multi_key> <BackSpace> <L>            : "⌷" U2337 # APL FUNCTIONAL SYMBOL SQUISH QUAD
+<Multi_key> <BackSpace> <K>            : "⌸" U2338 # APL FUNCTIONAL SYMBOL QUAD EQUAL
+<Multi_key> <BackSpace> <plus>         : "⌹" U2339 # APL FUNCTIONAL SYMBOL QUAD DIVIDE
+<Multi_key> <BackSpace> <asciitilde>   : "⌺" U233A # APL FUNCTIONAL SYMBOL QUAD DIAMOND
+<Multi_key> <BackSpace> <slash>        : "⌿" U233F # APL FUNCTIONAL SYMBOL SLASH BAR
+<Multi_key> <BackSpace> <period>       : "⍀" U2340 # APL FUNCTIONAL SYMBOL BACKSLASH BAR
+<Multi_key> <BackSpace> <asciicircum>  : "⍉" U2349 # APL FUNCTIONAL SYMBOL CIRCLE BACKSLASH
+<Multi_key> <BackSpace> <dollar>       : "⍋" U234B # APL FUNCTIONAL SYMBOL DELTA STILE
+<Multi_key> <BackSpace> <semicolon>    : "⍎" U234E # APL FUNCTIONAL SYMBOL DOWN TACK JOT
+<Multi_key> <BackSpace> <numbersign>   : "⍒" U2352 # APL FUNCTIONAL SYMBOL DEL STILE
+<Multi_key> <BackSpace> <apostrophe>   : "⍕" U2355 # APL FUNCTIONAL SYMBOL UP TACK JOT
+<Multi_key> <BackSpace> <greater>      : "⍙" U2359 # APL FUNCTIONAL SYMBOL DELTA UNDERBAR
+<Multi_key> <BackSpace> <comma>        : "⍝" U235D # APL FUNCTIONAL SYMBOL UP SHOW JOT
+<Multi_key> <BackSpace> <braceleft>    : "⍞" U235E # APL FUNCTIONAL SYMBOL QUOTE QUAD
+<Multi_key> <BackSpace> <asterisk>     : "⍟" U235F # APL FUNCTIONAL SYMBOL CIRCLE STAR
+<Multi_key> <BackSpace> <question>     : "⍠" U2360 # APL FUNCTIONAL SYMBOL QUAD COLON
+<Multi_key> <BackSpace> <P>            : "⍣" U2363 # APL FUNCTIONAL SYMBOL STAR DIAERESIS
+<Multi_key> <BackSpace> <J>            : "⍤" U2364 # APL FUNCTIONAL SYMBOL JOT DIAERESIS
+<Multi_key> <BackSpace> <O>            : "⍥" U2365 # APL FUNCTIONAL SYMBOL CIRCLE DIAERESIS
+<Multi_key> <BackSpace> <T>            : "⍨" U2368 # APL FUNCTIONAL SYMBOL TILDE DIAERESIS
+<Multi_key> <BackSpace> <less>         : "⍪" U236A # APL FUNCTIONAL SYMBOL COMMA BAR
+<Multi_key> <BackSpace> <at>           : "⍫" U236B # APL FUNCTIONAL SYMBOL DEL TILDE
+<Multi_key> <BackSpace> <braceright>   : "⍬" U236C # APL FUNCTIONAL SYMBOL ZILDE
+<Multi_key> <BackSpace> <parenleft>    : "⍱" U2371 # APL FUNCTIONAL SYMBOL DOWN CARET TILDE
+<Multi_key> <BackSpace> <parenright>   : "⍲" U2372 # APL FUNCTIONAL SYMBOL UP CARET TILDE
+<Multi_key> <BackSpace> <i>            : "⍳" U2373 # APL FUNCTIONAL SYMBOL IOTA
+<Multi_key> <BackSpace> <r>            : "⍴" U2374 # APL FUNCTIONAL SYMBOL RHO
+<Multi_key> <BackSpace> <w>            : "⍵" U2375 # APL FUNCTIONAL SYMBOL OMEGA
+<Multi_key> <BackSpace> <E>            : "⍷" U2378 # APL FUNCTIONAL SYMBOL EPSILON UNDERBAR
+<Multi_key> <BackSpace> <I>            : "⍸" U2378 # APL FUNCTIONAL SYMBOL IOTA UNDERBAR
+<Multi_key> <BackSpace> <a>            : "⍺" U237A # APL FUNCTIONAL SYMBOL ALPHA
+<Multi_key> <BackSpace> <l>            : "⎕" U2395 # APL FUNCTIONAL SYMBOL QUAD
+<Multi_key> <BackSpace> <o>            : "○" U25CB # WHITE CIRCLE
