@@ -23,6 +23,10 @@ setopt share_history          # share command history data
 # aliases
 source ~/.bash_aliases
 
+[[ -r ~/.dir_colors ]] &&
+    eval $(dircolors -b ~/.dir_colors) ||
+    eval $(dircolors -b)
+
 # plugin options
 COMPLETION_WAITING_DOTS=true
 export ZSH_PLUGINS_ALIAS_TIPS_FORCE=1
