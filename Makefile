@@ -1,6 +1,6 @@
 ROOT_DIR := $(shell dirname $(realpath $(lastword $(MAKEFILE_LIST))))
 
-.PHONY:	all aliases ghci i3 p10k tmux uncrustify vim compose zsh
+.PHONY:	all aliases ghci i3 p10k tmux uncrustify vim compose zsh dir_colors
 
 all:	aliases ghci i3 p10k tmux uncrustify vim compose zsh
 
@@ -52,3 +52,11 @@ compose:	~/.old
 zsh:	~/.old
 	-mv ~/.zshrc -t ~/.old 2>/dev/null
 	ln -s ${ROOT_DIR}/zshrc ~/.zshrc
+
+alacritty:	~/.old
+	-mv ~/.alacritty.yml -t ~/.old 2>/dev/null
+	ln -s ${ROOT_DIR}/alacritty.yml ~/.alacritty.yml
+
+dir_colors:	~/.old
+	-mv ~/.dir_colors -t ~/.old 2>/dev/null
+	ln -s ${ROOT_DIR}/dir_colors ~/.dir_colors
