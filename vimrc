@@ -47,12 +47,14 @@ endfunc
 set tabstop=4 softtabstop=0 shiftwidth=0
 " display indentation guides
 set list listchars=tab:│\ ,trail:·,extends:»,precedes:«,nbsp:×
+augroup indentguides
 " convert spaces to tabs when reading file
 autocmd bufreadpost * set noexpandtab | silent! call RetabIndents()
 " convert tabs to spaces before writing file
 autocmd bufwritepre * if &filetype != 'make' | set expandtab | retab 4
 " convert spaces to tabs after writing file (to show guides again)
 autocmd bufwritepost * set noexpandtab | silent! call RetabIndents()
+augroup END
 
 "" options
 set number relativenumber
