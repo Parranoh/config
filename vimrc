@@ -59,6 +59,7 @@ augroup END
 "" options
 set number relativenumber
 autocmd TerminalOpen * if &buftype == 'terminal' | setlocal nobuflisted nonumber norelativenumber | endif
+autocmd FileType sql set commentstring=--\ %s
 syntax enable
 set cindent
 set incsearch hlsearch
