@@ -74,6 +74,9 @@ set mouse=a
 if $TERM == 'alacritty'
     set ttymouse=sgr
 endif
+if $COLORTERM == 'truecolor'
+    set termguicolors
+endif
 set hidden
 set display=truncate scrolloff=5
 set backupdir=.backup,~/.backup,/tmp//
