@@ -60,6 +60,7 @@ augroup END
 set number relativenumber
 autocmd TerminalOpen * if &buftype == 'terminal' | setlocal nobuflisted nonumber norelativenumber | endif
 autocmd FileType sql set commentstring=--\ %s
+autocmd FileType gitcommit,diff set nofoldenable | autocmd! indentguides
 syntax enable
 set cindent
 set incsearch hlsearch
