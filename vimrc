@@ -72,9 +72,7 @@ set showmatch
 set showcmd
 set mouse=a
 if $TERM == 'alacritty'
-    set ttymouse=sgr
-    let &t_8f="\e[38;2;%lu;%lu;%lum"
-    let &t_8b="\e[48;2;%lu;%lu;%lum"
+    set term=xterm
 endif
 if $COLORTERM == 'truecolor'
     set termguicolors
