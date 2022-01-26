@@ -73,6 +73,7 @@ set showcmd
 set mouse=a
 if $TERM == 'alacritty'
     set term=xterm
+    let $COLORTERM = 'truecolor' " useful for SSH
 endif
 if $COLORTERM == 'truecolor'
     set termguicolors
