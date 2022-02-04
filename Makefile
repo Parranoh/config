@@ -1,8 +1,8 @@
 ROOT_DIR := $(shell dirname $(realpath $(lastword $(MAKEFILE_LIST))))
 
-.PHONY:	all aliases ghci i3 p10k tmux uncrustify vim compose zsh dir_colors
+.PHONY:	all aliases ghci i3 i3status dunst p10k tmux uncrustify vim compose zsh alacritty dir_colors compton
 
-all:	aliases ghci i3 p10k tmux uncrustify vim compose zsh
+all:	aliases i3 i3status dunst p10k tmux uncrustify vim compose zsh alacritty dir_colors compton
 
 ~/.old:
 	-mkdir ~/.old
