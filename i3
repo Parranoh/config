@@ -44,10 +44,10 @@ bindsym XF86Mail exec evolution &
 bindsym XF86HomePage exec firefox &
 
 # function keys to adjust display brightness
-bindsym XF86MonBrightnessUp exec brightness 5 && $refresh_i3status &
-bindsym Control+XF86MonBrightnessUp exec brightness 50 && $refresh_i3status &
-bindsym XF86MonBrightnessDown exec brightness -5 && $refresh_i3status &
-bindsym Control+XF86MonBrightnessDown exec brightness -50 && $refresh_i3status &
+bindsym       XF86MonBrightnessUp   exec brightness  50 && $refresh_i3status &
+bindsym       XF86MonBrightnessDown exec brightness -50 && $refresh_i3status &
+bindsym Shift+XF86MonBrightnessUp   exec brightness   5 && $refresh_i3status &
+bindsym Shift+XF86MonBrightnessDown exec brightness  -5 && $refresh_i3status &
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
