@@ -109,19 +109,16 @@ inoremap {<CR> {<CR>}<Esc>O
 inoremap {;<CR> {<CR>};<Esc>O
 autocmd FileType html,xml inoremap <buffer> < <><Left>
 " automagically close quotes, brackets
-inoremap <expr> ' strpart(getline('.'), col('.')-1, 1) == "'" ? "\<Right>" : "''<Left>"
-inoremap <expr> " strpart(getline('.'), col('.')-1, 1) == '"' ? "\<Right>" : '""<Left>'
-inoremap <expr> ) strpart(getline('.'), col('.')-1, 1) == ")" ? "\<Right>" : ")"
-inoremap <expr> ] strpart(getline('.'), col('.')-1, 1) == "]" ? "\<Right>" : "]"
-inoremap <expr> } strpart(getline('.'), col('.')-1, 1) == "}" ? "\<Right>" : "}"
-autocmd FileType haskell,lhaskell inoremap <buffer> ' '
-autocmd FileType html,xml inoremap <buffer> <expr> > strpart(getline('.'), col('.')-1, 1) == ">" ? "\<Right>" : ">"
-autocmd FileType haskell,lhaskell inoremap <buffer> <expr> ` strpart(getline('.'), col('.')-1, 1) == "`" ? "\<Right>" : "``<Left>"
+inoremap <expr> " strpart(getline('.'), col('.')-1, 1) == '"' ? '<Right>' : '""<Left>'
+inoremap <expr> ) strpart(getline('.'), col('.')-1, 1) == ')' ? '<Right>' : ")"
+inoremap <expr> ] strpart(getline('.'), col('.')-1, 1) == ']' ? '<Right>' : "]"
+inoremap <expr> } strpart(getline('.'), col('.')-1, 1) == '}' ? '<Right>' : "}"
+autocmd FileType * let b:brackets = ['""', '()', '[]', '{}']
+autocmd FileType awk,c,cpp,cs,go,html,j,java*,json,python,perl,sql,vim,xml,*sh let b:brackets += ["''"] | inoremap <buffer> <expr> ' strpart(getline('.'), col('.')-1, 1) == "'" ? '<Right>' : "''<Left>"
+autocmd FileType html,xml                                                      let b:brackets += ['<>'] | inoremap <buffer> <expr> > strpart(getline('.'), col('.')-1, 1) == '>' ? '<Right>' : '>'
+autocmd FileType *haskell                                                      let b:brackets += ['``'] | inoremap <buffer> <expr> ` strpart(getline('.'), col('.')-1, 1) == '`' ? '<Right>' : '``<Left>'
 " automagically delete closing quote, brackets if empty
-autocmd FileType * let b:brackets = ["''", '""', "()", "[]", "{}"]
-autocmd FileType html,xml let b:brackets = ["''", '""', "()", "[]", "{}", "<>"]
-autocmd FileType haskell,lhaskell let b:brackets = ['""', "()", "[]", "{}", "``"]
-autocmd FileType * inoremap <buffer> <expr> <BS> index(b:brackets, strpart(getline('.'), col('.')-2, 2)) != -1 ? "<BS><Del>" : "<BS>"
+autocmd FileType * inoremap <buffer> <expr> <BS> index(b:brackets, strpart(getline('.'), col('.')-2, 2)) != -1 ? '<BS><Del>' : '<BS>'
 
 " aliases
 command -nargs=* -complete=help H vert bo h <args>
