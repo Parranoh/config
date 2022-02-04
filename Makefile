@@ -60,3 +60,7 @@ alacritty:	~/.old
 dir_colors:	~/.old
 	-mv ~/.dir_colors -t ~/.old 2>/dev/null
 	ln -s ${ROOT_DIR}/dir_colors ~/.dir_colors
+
+compton:	~/.old
+	-mv ~/.compton.conf -t ~/.old 2>/dev/null
+	ln -s ${ROOT_DIR}/compton.conf ~/.compton.conf

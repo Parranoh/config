@@ -274,6 +274,8 @@ bar {
         }
 }
 
+exec --no-startup-id compton -b
+
 exec --no-startup-id i3-msg "workspace number $ws1 ; exec i3-sensible-terminal &" &
 exec --no-startup-id i3-msg "workspace number $ws9 ; exec i3-sensible-terminal ncspot &" &
 exec ~/.bash_scripts/discord-keep-alive.sh &
