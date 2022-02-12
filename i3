@@ -194,6 +194,9 @@ bindsym $mod+Mod2+Shift+KP_Insert move container to workspace number $ws10
 bindsym $mod+Shift+comma move container to workspace prev_on_output
 bindsym $mod+Shift+period move container to workspace next_on_output
 
+# rename active workspace
+bindsym $mod+m exec --no-startup-id i3-input -F 'rename workspace to "%s"' -P 'New name: '
+
 # assign applications to workspaces
 assign [class="^Evolution$"] → $ws2
 assign [class="^Firefox$"] → $ws3
