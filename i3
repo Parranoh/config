@@ -167,6 +167,8 @@ bindsym $mod+Mod2+KP_7 workspace number $ws7
 bindsym $mod+Mod2+KP_8 workspace number $ws8
 bindsym $mod+Mod2+KP_9 workspace number $ws9
 bindsym $mod+Mod2+KP_0 workspace number $ws10
+bindsym $mod+comma workspace prev_on_output
+bindsym $mod+period workspace next_on_output
 
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace number $ws1
@@ -189,6 +191,8 @@ bindsym $mod+Mod2+Shift+KP_Home move container to workspace number $ws7
 bindsym $mod+Mod2+Shift+KP_Up move container to workspace number $ws8
 bindsym $mod+Mod2+Shift+KP_Prior move container to workspace number $ws9
 bindsym $mod+Mod2+Shift+KP_Insert move container to workspace number $ws10
+bindsym $mod+Shift+comma move container to workspace prev_on_output
+bindsym $mod+Shift+period move container to workspace next_on_output
 
 # assign applications to workspaces
 assign [class="^Evolution$"] → $ws2
