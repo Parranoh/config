@@ -101,6 +101,7 @@ nnoremap <expr> N  'nN'[v:searchforward]
 xnoremap <expr> N  'nN'[v:searchforward]
 onoremap <expr> N  'nN'[v:searchforward]
 nnoremap <C-L> :nohlsearch<CR>:diffupdate<CR>:syntax sync fromstart<CR><C-L>
+inoremap <C-B> <Esc>I\begin{<Esc>A}<Esc>yyplciwend<Esc>O
 " automagically close brackets
 inoremap ( ()<left>
 inoremap [ []<left>
