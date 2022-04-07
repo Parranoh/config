@@ -282,7 +282,7 @@ bar {
         }
 }
 
-exec_always --no-startup-id killall compton; compton -b
+exec_always --no-startup-id killall compton; compton -b; ~/.fehbg
 
 exec --no-startup-id i3-msg "workspace number $ws1 ; exec i3-sensible-terminal &" &
 exec --no-startup-id i3-msg "workspace number $ws9 ; exec i3-sensible-terminal ncspot &" &

@@ -41,9 +41,6 @@ setxkbmap -option caps:swapescape
 # turn on num lock
 xdotool key Num_Lock
 
-# set wallpaper
-~/.fehbg
-
 export TERMINAL=alacritty
 export EDITOR=vi
 eval $(lesspipe)
