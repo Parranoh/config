@@ -38,6 +38,13 @@ bindsym Shift+XF86AudioPlay exec playerctl -a pause &
 bindsym XF86AudioNext exec playerctl next &
 bindsym XF86AudioPrev exec playerctl previous &
 
+# dunst controls
+bindsym $mod+Control+Up     exec --no-startup-id dunstctl history-pop
+bindsym $mod+Control+Down   exec --no-startup-id dunstctl close
+bindsym $mod+Control+End    exec --no-startup-id dunstctl close-all
+bindsym $mod+Control+Return exec --no-startup-id dunstctl action
+bindsym $mod+Control+p      exec --no-startup-id dunstctl set-paused toggle
+
 # other extra keys
 bindsym XF86Explorer exec nautilus &
 bindsym XF86Mail exec evolution &
@@ -240,13 +247,15 @@ bindsym $mod+r mode "resize"
 
 set $hardy /usr/share/backgrounds/hardy_wallpaper_uhd.png
 set $system_mode System: (l)ock, (e)xit, (s)uspend, (h)ibernate, (r)eboot, (p)oweroff
+set $pause_dunst paused=$(dunstctl is-paused) ; dunstctl set-paused true
+set $unpause_dunst dunstctl set-paused $paused
 mode "$system_mode" {
-    bindsym l mode "default", exec --no-startup-id "{ xset +dpms ; i3lock -fenti $hardy ; xset -dpms ; } &"
+    bindsym l mode "default", exec --no-startup-id "$pause_dunst ; xset +dpms ; i3lock -fenti $hardy ; xset -dpms ; $unpause_dunst"
     bindsym e mode "default", exit
-    bindsym s mode "default", exec --no-startup-id "{ i3lock -feti $hardy && systemctl suspend ; } &"
-    bindsym h mode "default", exec --no-startup-id "{ i3lock -feti $hardy && systemctl hibernate ; } &"
-    bindsym r mode "default", exec --no-startup-id "systemctl reboot"
-    bindsym p mode "default", exec --no-startup-id "systemctl poweroff"
+    bindsym s mode "default", exec --no-startup-id "$pause_dunst ; i3lock -feti $hardy && systemctl suspend ; $unpause_dunst"
+    bindsym h mode "default", exec --no-startup-id "$pause_dunst ; i3lock -feti $hardy && systemctl hibernate ; $unpause_dunst"
+    bindsym r mode "default", exec --no-startup-id systemctl reboot
+    bindsym p mode "default", exec --no-startup-id systemctl poweroff
 
     bindsym Return mode "default"
     bindsym Escape mode "default"
