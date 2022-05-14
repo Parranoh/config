@@ -18,6 +18,7 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'gosukiwi/vim-atom-dark'
+Plugin 'junegunn/vim-easy-align'
 Plugin 'preservim/nerdtree'
 Plugin 'tpope/vim-commentary'
 Plugin 'tpope/vim-fugitive'
@@ -120,6 +121,9 @@ autocmd FileType html,xml                                                      l
 autocmd FileType *haskell                                                      let b:brackets += ['``'] | inoremap <buffer> <expr> ` strpart(getline('.'), col('.')-1, 1) == '`' ? '<Right>' : '``<Left>'
 " automagically delete closing quote, brackets if empty
 autocmd FileType * inoremap <buffer> <expr> <BS> index(b:brackets, strpart(getline('.'), col('.')-2, 2)) != -1 ? '<BS><Del>' : '<BS>'
+
+xmap ga <Plug>(EasyAlign)
+nmap ga <Plug>(EasyAlign)
 
 " aliases
 command -nargs=* -complete=help H vert bo h <args>
