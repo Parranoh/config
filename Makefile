@@ -2,7 +2,7 @@ ROOT_DIR := $(shell dirname $(realpath $(lastword $(MAKEFILE_LIST))))
 
 .PHONY:	all aliases ghci i3 i3status dunst p10k tmux uncrustify vim compose zsh alacritty dir_colors compton
 
-all:	aliases i3 i3status dunst p10k tmux uncrustify vim compose zsh alacritty dir_colors compton
+all:	aliases i3 i3status dunst p10k tmux uncrustify vim compose zsh alacritty dir_colors compton mpv
 
 ~/.old:
 	-mkdir ~/.old
@@ -64,3 +64,8 @@ dir_colors:	~/.old
 compton:	~/.old
 	-mv ~/.compton.conf -t ~/.old 2>/dev/null
 	ln -s ${ROOT_DIR}/compton.conf ~/.compton.conf
+
+mpv:	~/.old
+	-mv ~/.config/mpv/mpv.conf -t ~/.old 2>/dev/null
+	mkdir -p ~/.config/mpv
+	ln -s ${ROOT_DIR}/mpv.conf ~/.config/mpv/mpv.conf
