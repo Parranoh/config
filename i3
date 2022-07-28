@@ -277,6 +277,7 @@ client.background       #000000
 bar {
         status_command exec i3status
         tray_output primary
+        mode hide
         colors {
                 background #000000
                 statusline #ffffff
