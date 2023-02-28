@@ -86,7 +86,9 @@ set backupdir=.backup,~/.backup,/tmp//
 set directory=.swp/,~/.swp/,/tmp//
 set undodir=.undo/,~/.undo/,/tmp//
 set timeout timeoutlen=1000 ttimeoutlen=100
-set eadirection=ver
+set eadirection=ver " for nerdtree
+set nojoinspaces
+set fillchars=vert:│,fold:-
 
 "" custom mapping
 nnoremap <Space> :
