@@ -24,6 +24,7 @@ Plugin 'tpope/vim-commentary'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-repeat'
 Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-unimpaired'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'vim-scripts/ReplaceWithRegister'
@@ -88,8 +89,6 @@ set timeout timeoutlen=1000 ttimeoutlen=100
 set eadirection=ver
 
 "" custom mapping
-nnoremap <C-N> :bnext<CR>
-nnoremap <C-P> :bprevious<CR>
 nnoremap <Space> :
 nnoremap <Leader>a :NERDTreeToggle<CR>
 nnoremap Y y$
