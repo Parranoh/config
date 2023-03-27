@@ -18,6 +18,7 @@ alias t='todo.sh'
 alias e='evince'
 alias _='sudo'
 alias ffp='ffprobe -hide_banner'
+alias f='feh -qdr.S filename --version-sort'
 
 alias tmux-ls='tmux list-sessions'
 alias tmux-r='tmux attach-session'
