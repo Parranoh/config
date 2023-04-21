@@ -2,12 +2,6 @@ set nocompatible              " be iMproved, required
 filetype off                  " required
 
 "" plugins
-let g:airline_section_z  = '%p%%'                                                             " percent
-let g:airline_section_z .= '%#__accent_bold#%{g:airline_symbols.linenr}%l%#__restore__#'      " current line
-let g:airline_section_z .= '%#__accent_bold#/%L%{g:airline_symbols.maxlinenr}%#__restore__#'  " last line
-let g:airline_section_z .= '%#__accent_bold#%{g:airline_symbols.colnr}%v%#__restore__#'       " current column
-let g:airline_section_z .= ' U+%04B'                                                          " character under cursor
-
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -62,6 +56,8 @@ augroup END
 set number relativenumber
 autocmd TerminalOpen * if &buftype == 'terminal' | setlocal nobuflisted nonumber norelativenumber | endif
 autocmd FileType sql set commentstring=--%s
+autocmd FileType ass set textwidth=0 commentstring=;%s
+autocmd FileType markdown set commentstring=<!--%s-->
 autocmd FileType gitcommit,diff set nofoldenable | autocmd! indentguides
 syntax enable
 set cindent
