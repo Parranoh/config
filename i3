@@ -208,6 +208,7 @@ bindsym $mod+m exec --no-startup-id i3-input -F 'rename workspace to "%s"' -P 'N
 assign [class="^Evolution$"] → $ws2
 assign [class="^[fF]irefox$"] → $ws3
 assign [class="^discord$"] → $ws10
+assign [class="^[sS]ignal$"] → $ws10
 for_window [class="^Alacritty$"] border pixel 2
 for_window [class="^[fF]irefox$"] border pixel 2
 
