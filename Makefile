@@ -1,8 +1,8 @@
 ROOT_DIR := $(shell dirname $(realpath $(lastword $(MAKEFILE_LIST))))
 
-.PHONY:	all aliases ghci i3 i3status dunst p10k tmux uncrustify vim compose zsh alacritty dir_colors compton
+.PHONY:	all aliases ghci i3 i3status dunst p10k profile tmux uncrustify vim compose zsh alacritty dir_colors compton
 
-all:	aliases i3 i3status dunst p10k tmux uncrustify vim compose zsh alacritty dir_colors compton mpv
+all:	aliases i3 i3status dunst p10k profile tmux uncrustify vim compose zsh alacritty dir_colors compton mpv
 
 ~/.old:
 	-mkdir ~/.old
@@ -32,6 +32,10 @@ dunst:	~/.old
 p10k:	~/.old
 	-mv ~/.p10k.zsh -t ~/.old 2>/dev/null
 	ln -s ${ROOT_DIR}/p10k.zsh ~/.p10k.zsh
+
+profile:	~/.old
+	-mv ~/.profile -t ~/.old 2>/dev/null
+	ln -s ${ROOT_DIR}/profile ~/.profile
 
 tmux:	~/.old
 	-mv ~/.tmux.conf -t ~/.old 2>/dev/null
