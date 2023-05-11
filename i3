@@ -246,7 +246,7 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-set $hardy /usr/share/backgrounds/hardy_wallpaper_uhd.png
+set $hardy /usr/share/backgrounds/default.png
 set $system_mode System: (l)ock, (e)xit, (s)uspend, (h)ibernate, (r)eboot, (p)oweroff
 set $pause_dunst paused=$(dunstctl is-paused) ; dunstctl set-paused true
 set $unpause_dunst dunstctl set-paused $paused
@@ -293,7 +293,7 @@ bar {
         }
 }
 
-exec_always --no-startup-id killall compton; compton -b; ~/.fehbg
+exec_always --no-startup-id killall compton; compton -b
 
 exec --no-startup-id i3-msg "workspace number $ws1 ; exec i3-sensible-terminal &" &
 exec --no-startup-id i3-msg "workspace number $ws9 ; exec i3-sensible-terminal ncspot &" &
