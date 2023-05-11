@@ -33,7 +33,7 @@ xset m 0
 setxkbmap -option compose:menu
 
 # Workman keyboard layout
-setxkbmap us workman-p
+setxkbmap us workman-intl-p
 
 # swap escape and caps lock
 setxkbmap -option caps:swapescape
