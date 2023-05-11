@@ -295,10 +295,3 @@ bar {
 exec_always --no-startup-id killall compton; compton -b
 
 exec --no-startup-id i3-msg "workspace number $ws1 ; exec i3-sensible-terminal &" &
-exec --no-startup-id i3-msg "workspace number $ws9 ; exec i3-sensible-terminal ncspot &" &
-exec ~/.bash_scripts/discord-keep-alive.sh &
-
-exec --no-startup-id "xrandr --output DP-5 --primary --mode 1920x1080 --output HDMI-0 --mode 1920x1080 --right-of DP-5 --output DVI-D-0 --mode 1920x1080 --left-of DP-5"
-workspace $ws1 output DP-5
-workspace $ws9 output DVI-D-0
-workspace $ws10 output DVI-D-0
