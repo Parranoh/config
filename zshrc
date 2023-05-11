@@ -62,7 +62,7 @@ zinit wait'1' lucid for \
         atinit"zicompinit; zicdreplay" \
         atclone'sed -i "/^comment/s/black/8/" themes/default.ini' atpull'%atclone' \
     zdharma-continuum/fast-syntax-highlighting
-zinit ice atclone'sed -i "/^bindkey -e$/d" key-bindings.zsh; zcompile key-bindings.zsh' atpull'%atclone'
+zinit ice atclone'sed -ri "/^bindkey -e$|(\\\\e|\\^\\[)[a-z]/d" key-bindings.zsh; zcompile key-bindings.zsh' atpull'%atclone'
 zinit snippet OMZ::lib/key-bindings.zsh  # loading this with wait'' breaks p10k
 
 zinit ice depth'1'
