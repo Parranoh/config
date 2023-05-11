@@ -11,7 +11,6 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
-Plugin 'gosukiwi/vim-atom-dark'
 Plugin 'junegunn/vim-easy-align'
 Plugin 'preservim/nerdtree'
 Plugin 'tpope/vim-commentary'
@@ -76,6 +75,8 @@ endif
 if $COLORTERM == 'truecolor'
     set termguicolors
 endif
+colorscheme torte
+hi Normal guifg=#ffffff
 set hidden
 set display=truncate scrolloff=5
 set backupdir=.backup,~/.backup,/tmp//
