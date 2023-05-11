@@ -56,8 +56,7 @@ zinit wait lucid for \
         blockf \
     OMZ::lib/completion.zsh \
     OMZ::lib/directories.zsh \
-    OMZ::lib/spectrum.zsh \
-    OMZ::lib/termsupport.zsh
+    OMZ::lib/spectrum.zsh
 zinit wait'1' lucid for \
         atinit"zicompinit; zicdreplay" \
         atclone'sed -i "/^comment/s/black/8/" themes/default.ini' atpull'%atclone' \
