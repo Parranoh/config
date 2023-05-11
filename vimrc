@@ -146,3 +146,10 @@ highlight PmenuSel ctermbg=DarkGreen cterm=bold ctermfg=White
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
 let g:airline_theme = 'simple'
+
+" synctex setup with zathura
+function! Synctex()
+    execute "silent !zathura --synctex-forward " . line('.') . ":" . col('.') . ":" . bufname('%') . " " . g:syncpdf
+    redraw!
+endfunction
+map <Leader><CR> :call Synctex()<CR>

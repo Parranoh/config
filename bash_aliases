@@ -15,7 +15,7 @@ alias emacs='emacs -nw'
 alias cgrep='cat /usr/share/X11/locale/en_US.UTF-8/Compose ~/.XCompose | grep -i'
 alias path='echo $PATH | sed "s/:/\n/g" | sort'
 alias t='todo.sh'
-alias e='evince &>/dev/null'
+alias e='zathura &>/dev/null'
 alias _='sudo'
 alias ffp='ffprobe -hide_banner'
 alias f='feh -qdr.S filename --version-sort'
@@ -36,4 +36,3 @@ alias mv='mv -nv'
 utoh () { env printf -- "$*" | iconv -f utf-8 -t ucs-4le | od -tx4 | cut -c9- ; }
 
 mcd () { mkdir -p "$@" && cd "${@[-1]}" ; }
-[[ -n "$ZSH_VERSION" ]] && compdef mcd=mkdir
