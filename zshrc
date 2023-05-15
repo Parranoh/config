@@ -56,6 +56,7 @@ zinit wait lucid for \
         blockf \
     OMZ::lib/completion.zsh \
     OMZ::lib/directories.zsh \
+    OMZ::lib/git.zsh \
     OMZ::lib/spectrum.zsh
 zinit wait'1' lucid for \
         atinit"zicompinit; zicdreplay" \
