@@ -103,7 +103,7 @@ env:
 
 # Font configuration
 font:
-  builtin_box_drawing: false
+  #builtin_box_drawing: false
   # Normal (roman) font face
   normal:
     # Font family
