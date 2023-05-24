@@ -5,29 +5,29 @@ xkb_symbols "workman-intl-p" {
     name[Group1] = "English (Workman, intl., programmer)";
     key.type[Group1] = "EIGHT_LEVEL";
 
-    key <TLDE> { [       grave, asciitilde                            ] };
-    key <AE01> { [      exclam,          1                            ] };
-    key <AE02> { [          at,          2                            ] };
-    key <AE03> { [  numbersign,          3                            ] };
-    key <AE04> { [      dollar,          4                            ] };
-    key <AE05> { [     percent,          5                            ] };
-    key <AE06> { [ asciicircum,          6                            ] };
-    key <AE07> { [   ampersand,          7,  ampersand,          7, 7 ] };
-    key <AE08> { [    asterisk,          8,   asterisk,          8, 8 ] };
-    key <AE09> { [   parenleft,          9,  parenleft,          9, 9 ] };
-    key <AE10> { [  parenright,          0                            ] };
+    key <TLDE> { [       grave, asciitilde                                       ] };
+    key <AE01> { [      exclam,          1,           exclamdown, onesuperior    ] };
+    key <AE02> { [          at,          2,          twosuperior                 ] };
+    key <AE03> { [  numbersign,          3,        threesuperior                 ] };
+    key <AE04> { [      dollar,          4,             currency,    sterling    ] };
+    key <AE05> { [     percent,          5,             EuroSign                 ] };
+    key <AE06> { [ asciicircum,          6,           onequarter                 ] };
+    key <AE07> { [   ampersand,          7,              onehalf,           7, 7 ] };
+    key <AE08> { [    asterisk,          8,        threequarters,           8, 8 ] };
+    key <AE09> { [   parenleft,          9,  leftsinglequotemark,           9, 9 ] };
+    key <AE10> { [  parenright,          0, rightsinglequotemark                 ] };
 
-    key <AB07> { [           l,          L,     oslash,   Ooblique, 0 ] };
-    key <AC07> { [           n,          N,     ntilde,     Ntilde, 1 ] };
-    key <AC08> { [           e,          E,     eacute,     Eacute, 2 ] };
-    key <AC09> { [           o,          O,     oacute,     Oacute, 3 ] };
-    key <AD07> { [           f,          F,          f,          F, 4 ] };
-    key <AD08> { [           u,          U,     uacute,     Uacute, 5 ] };
-    key <AD09> { [           p,          P, odiaeresis, Odiaeresis, 6 ] };
+    key <AB07> { [           l,          L,               oslash,    Ooblique, 0 ] };
+    key <AC07> { [           n,          N,               ntilde,      Ntilde, 1 ] };
+    key <AC08> { [           e,          E,               eacute,      Eacute, 2 ] };
+    key <AC09> { [           o,          O,               oacute,      Oacute, 3 ] };
+    key <AD07> { [           f,          F,                    f,           F, 4 ] };
+    key <AD08> { [           u,          U,               uacute,      Uacute, 5 ] };
+    key <AD09> { [           p,          P,           odiaeresis,  Odiaeresis, 6 ] };
 
-    key <AC11> { [  apostrophe,   quotedbl                            ] };
+    key <AC11> { [  apostrophe,   quotedbl                                       ] };
 
-    key <CAPS> { [   Caps_Lock                                        ] };
+    key <CAPS> { [   Caps_Lock                                                   ] };
 
     include "level5(lsgt_switch)"
 };
