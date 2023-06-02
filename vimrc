@@ -150,7 +150,12 @@ let g:airline_theme = 'simple'
 
 " synctex setup with zathura
 function! Synctex()
-    execute "silent !zathura --synctex-forward " . line('.') . ":" . col('.') . ":" . bufname('%') . " " . g:syncpdf
+    execute 'silent !daemonize zathura --synctex-forward ' . line('.') . ':' . col('.') . ':' . shellescape(bufname('%')) . ' ' . shellescape(g:syncpdf)
     redraw!
 endfunction
-map <Leader><CR> :call Synctex()<CR>
+nnoremap <Leader>s :call Synctex()<CR>
+function! Latex()
+    execute 'silent !daemonize pdflatex -synctex=1 ' . shellescape(expand('%')) . ' &>/dev/null'
+    redraw!
+endfunction
+nnoremap <Leader>l :call Latex()<CR>
