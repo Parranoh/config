@@ -1,3 +1,5 @@
+CFLAGS = -Wall -Wextra -Wpedantic -O2
+
 ROOT_DIR := $(shell dirname $(realpath $(lastword $(MAKEFILE_LIST))))
 
 .PHONY:	all aliases ghci i3 i3status dunst p10k profile tmux uncrustify vim compose zsh alacritty dir_colors compton
