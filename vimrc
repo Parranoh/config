@@ -32,7 +32,7 @@ let fortran_more_precise=1
 "" tab handling
 " Retab spaced file, but only indentation
 func! RetabIndents()
-    if &ma
+    if &ma && !&bin
         let saved_view = winsaveview()
         execute '%s@^\( \{'.&ts.'}\)\+@\=repeat("\t", len(submatch(0))/'.&ts.')@'
         call winrestview(saved_view)
@@ -46,7 +46,7 @@ augroup indentguides
 " convert spaces to tabs when reading file
 autocmd bufreadpost * set noexpandtab | silent! call RetabIndents()
 " convert tabs to spaces before writing file
-autocmd bufwritepre * if &filetype != 'make' | set expandtab | retab 4
+autocmd bufwritepre * if !&bin | set expandtab | retab 4
 " convert spaces to tabs after writing file (to show guides again)
 autocmd bufwritepost * set noexpandtab | silent! call RetabIndents()
 augroup END
@@ -58,6 +58,7 @@ autocmd FileType sql set commentstring=--%s
 autocmd FileType ssa set textwidth=0 commentstring=;%s
 autocmd FileType markdown set commentstring=<!--%s-->
 autocmd FileType gitcommit,diff set nofoldenable | autocmd! indentguides
+autocmd FileType make,tsv autocmd! indentguides
 syntax enable
 set cindent
 set incsearch hlsearch
