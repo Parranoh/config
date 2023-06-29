@@ -152,7 +152,7 @@ let g:airline_theme = 'simple'
 
 " synctex setup with zathura
 function! Synctex()
-    execute 'silent !daemonize zathura --synctex-forward ' . line('.') . ':' . col('.') . ':' . shellescape(bufname('%')) . ' ' . shellescape(g:syncpdf)
+    execute 'silent !daemonize zathura -x "gvim --servername vim --remote +\%{line} \%{input}" --synctex-forward ' . line('.') . ':' . col('.') . ':' . shellescape(bufname('%')) . ' ' . shellescape(g:syncpdf)
     redraw!
 endfunction
 nnoremap <Leader>s :call Synctex()<CR>

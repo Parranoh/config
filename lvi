@@ -1,3 +1,2 @@
 #!/bin/zsh
-daemonize zathura -x "gvim --servername vim --remote +%{line} %{input}" "${1:r}.pdf"
 exec vi --servername vim -c "let g:syncpdf='${${1:r}//'/''}.pdf'" "$1"
