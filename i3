@@ -74,6 +74,7 @@ bindsym $mod+d exec j4-dmenu-desktop --no-generic --usage-log=$HOME/.j4-usage-lo
 
 # change focus
 bindsym $mod+h focus left
+bindsym $mod+y focus left
 bindsym $mod+j focus down
 bindsym $mod+k focus up
 bindsym $mod+l focus right
@@ -86,12 +87,14 @@ bindsym $mod+Right focus right
 
 # move focused window
 bindsym $mod+Shift+h move left
+bindsym $mod+Shift+y move left
 bindsym $mod+Shift+j move down
 bindsym $mod+Shift+k move up
 bindsym $mod+Shift+l move right
 
 # move focused workspace
 bindsym $mod+Control+Shift+h move workspace to output left
+bindsym $mod+Control+Shift+y move workspace to output left
 bindsym $mod+Control+Shift+j move workspace to output down
 bindsym $mod+Control+Shift+k move workspace to output up
 bindsym $mod+Control+Shift+l move workspace to output right
@@ -228,6 +231,7 @@ mode "resize" {
         # Pressing up will shrink the window’s height.
         # Pressing down will grow the window’s height.
         bindsym h resize shrink width 10 px or 1 ppt
+        bindsym y resize shrink width 10 px or 1 ppt
         bindsym j resize grow height 10 px or 1 ppt
         bindsym k resize shrink height 10 px or 1 ppt
         bindsym l resize grow width 10 px or 1 ppt
