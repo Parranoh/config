@@ -817,6 +817,7 @@ key_bindings:
   - { key: NumpadAdd,      mods: Control|Shift,                   action: IncreaseFontSize }
   - { key: Minus,          mods: Control|Shift,                   action: DecreaseFontSize }
   - { key: NumpadSubtract, mods: Control|Shift,                   action: DecreaseFontSize }
+  - { key: 12,             mods: Control|Shift,                   action: DecreaseFontSize }
 
   # (Windows only)
   #- { key: Return,   mods: Alt,           action: ToggleFullscreen }
