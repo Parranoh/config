@@ -1,2 +1,2 @@
 #!/bin/zsh
-exec vi --servername vim -c "let g:syncpdf='${${1:r}//'/''}.pdf'" "$1"
+exec vi --servername vim -c "let g:syncpdf='${${1:r}//'/''}.pdf'" -c "let g:synctex='${1//'/''}'" "$1"

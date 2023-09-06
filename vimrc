@@ -157,7 +157,7 @@ function! Synctex()
 endfunction
 nnoremap <Leader>s :call Synctex()<CR>
 function! Latex()
-    execute 'silent !daemonize pdflatex -synctex=1 ' . shellescape(expand('%'))
+    execute 'silent !daemonize latexmk -pdf -pdflatex="pdflatex -synctex=1 \%O \%S" ' . shellescape(g:synctex)
     redraw!
 endfunction
 nnoremap <Leader>l :call Latex()<CR>
